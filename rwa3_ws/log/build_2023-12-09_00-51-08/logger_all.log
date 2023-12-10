@@ -1,0 +1,374 @@
+[23.969s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[23.970s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f74063feee0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f74063feee0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f7406332d60>)
+[25.047s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[25.049s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[25.050s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[25.051s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[25.052s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[25.053s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[25.053s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws'
+[25.054s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[25.055s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[25.055s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[25.055s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[25.056s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[25.056s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[25.056s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[25.056s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[25.056s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[25.196s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[25.197s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[25.197s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[25.198s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[25.198s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[25.199s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[25.199s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[25.199s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[25.202s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[25.205s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[25.207s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[25.209s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[25.210s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[25.210s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[25.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[25.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[25.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[25.212s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[25.212s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[25.212s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[25.212s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[25.212s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[25.212s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[25.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[25.214s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[25.214s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[25.214s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[25.214s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[25.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/group17) by extensions ['ignore', 'ignore_ament_install']
+[25.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/group17) by extension 'ignore'
+[25.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/group17) by extension 'ignore_ament_install'
+[25.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/group17) by extensions ['colcon_pkg']
+[25.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/group17) by extension 'colcon_pkg'
+[25.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/group17) by extensions ['colcon_meta']
+[25.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/group17) by extension 'colcon_meta'
+[25.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/group17) by extensions ['ros']
+[25.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/group17) by extension 'ros'
+[25.243s] DEBUG:colcon.colcon_core.package_identification:Package 'src/group17' with type 'ros.ament_cmake' and name 'group17'
+[25.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/mage_msgs) by extensions ['ignore', 'ignore_ament_install']
+[25.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/mage_msgs) by extension 'ignore'
+[25.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/mage_msgs) by extension 'ignore_ament_install'
+[25.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/mage_msgs) by extensions ['colcon_pkg']
+[25.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/mage_msgs) by extension 'colcon_pkg'
+[25.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/mage_msgs) by extensions ['colcon_meta']
+[25.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/mage_msgs) by extension 'colcon_meta'
+[25.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/mage_msgs) by extensions ['ros']
+[25.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/mage_msgs) by extension 'ros'
+[25.258s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mage_msgs' with type 'ros.ament_cmake' and name 'mage_msgs'
+[25.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['ignore', 'ignore_ament_install']
+[25.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'ignore'
+[25.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'ignore_ament_install'
+[25.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['colcon_pkg']
+[25.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'colcon_pkg'
+[25.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['colcon_meta']
+[25.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'colcon_meta'
+[25.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['ros']
+[25.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'ros'
+[25.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['cmake', 'python']
+[25.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'cmake'
+[25.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'python'
+[25.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['python_setup_py']
+[25.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'python_setup_py'
+[25.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extensions ['ignore', 'ignore_ament_install']
+[25.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extension 'ignore'
+[25.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extension 'ignore_ament_install'
+[25.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extensions ['colcon_pkg']
+[25.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extension 'colcon_pkg'
+[25.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extensions ['colcon_meta']
+[25.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extension 'colcon_meta'
+[25.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extensions ['ros']
+[25.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extension 'ros'
+[25.269s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_aruco/ros2_aruco' with type 'ros.ament_python' and name 'ros2_aruco'
+[25.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[25.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extension 'ignore'
+[25.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extension 'ignore_ament_install'
+[25.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extensions ['colcon_pkg']
+[25.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extension 'colcon_pkg'
+[25.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extensions ['colcon_meta']
+[25.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extension 'colcon_meta'
+[25.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extensions ['ros']
+[25.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extension 'ros'
+[25.287s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_aruco/ros2_aruco_interfaces' with type 'ros.ament_cmake' and name 'ros2_aruco_interfaces'
+[25.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_sensors) by extensions ['ignore', 'ignore_ament_install']
+[25.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_sensors) by extension 'ignore'
+[25.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_sensors) by extension 'ignore_ament_install'
+[25.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_sensors) by extensions ['colcon_pkg']
+[25.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_sensors) by extension 'colcon_pkg'
+[25.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_sensors) by extensions ['colcon_meta']
+[25.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_sensors) by extension 'colcon_meta'
+[25.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_sensors) by extensions ['ros']
+[25.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_sensors) by extension 'ros'
+[25.304s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_sensors' with type 'ros.ament_cmake' and name 'turtlebot3_sensors'
+[25.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extensions ['ignore', 'ignore_ament_install']
+[25.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extension 'ignore'
+[25.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extension 'ignore_ament_install'
+[25.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extensions ['colcon_pkg']
+[25.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extension 'colcon_pkg'
+[25.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extensions ['colcon_meta']
+[25.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extension 'colcon_meta'
+[25.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extensions ['ros']
+[25.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extension 'ros'
+[25.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extensions ['cmake', 'python']
+[25.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extension 'cmake'
+[25.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extension 'python'
+[25.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extensions ['python_setup_py']
+[25.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extension 'python_setup_py'
+[25.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_fake_node) by extensions ['ignore', 'ignore_ament_install']
+[25.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_fake_node) by extension 'ignore'
+[25.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_fake_node) by extension 'ignore_ament_install'
+[25.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_fake_node) by extensions ['colcon_pkg']
+[25.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_fake_node) by extension 'colcon_pkg'
+[25.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_fake_node) by extensions ['colcon_meta']
+[25.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_fake_node) by extension 'colcon_meta'
+[25.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_fake_node) by extensions ['ros']
+[25.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_fake_node) by extension 'ros'
+[25.332s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_simulations/turtlebot3_fake_node' with type 'ros.ament_cmake' and name 'turtlebot3_fake_node'
+[25.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[25.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_gazebo) by extension 'ignore'
+[25.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_gazebo) by extension 'ignore_ament_install'
+[25.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_gazebo) by extensions ['colcon_pkg']
+[25.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_gazebo) by extension 'colcon_pkg'
+[25.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_gazebo) by extensions ['colcon_meta']
+[25.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_gazebo) by extension 'colcon_meta'
+[25.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_gazebo) by extensions ['ros']
+[25.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_gazebo) by extension 'ros'
+[25.350s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_simulations/turtlebot3_gazebo' with type 'ros.ament_cmake' and name 'turtlebot3_gazebo'
+[25.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_simulations) by extensions ['ignore', 'ignore_ament_install']
+[25.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_simulations) by extension 'ignore'
+[25.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_simulations) by extension 'ignore_ament_install'
+[25.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_simulations) by extensions ['colcon_pkg']
+[25.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_simulations) by extension 'colcon_pkg'
+[25.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_simulations) by extensions ['colcon_meta']
+[25.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_simulations) by extension 'colcon_meta'
+[25.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_simulations) by extensions ['ros']
+[25.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_simulations) by extension 'ros'
+[25.365s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_simulations/turtlebot3_simulations' with type 'ros.ament_cmake' and name 'turtlebot3_simulations'
+[25.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[25.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[25.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[25.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[25.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[27.309s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[27.309s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[28.112s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install
+[28.491s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install
+[28.855s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/keyur/ros809_ws/install
+[29.237s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 329 installed packages in /opt/ros/galactic
+[29.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[30.970s] Level 5:colcon.colcon_core.verb:set package 'mage_msgs' build argument 'cmake_args' from command line to 'None'
+[30.972s] Level 5:colcon.colcon_core.verb:set package 'mage_msgs' build argument 'cmake_target' from command line to 'None'
+[30.973s] Level 5:colcon.colcon_core.verb:set package 'mage_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[30.974s] Level 5:colcon.colcon_core.verb:set package 'mage_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[30.975s] Level 5:colcon.colcon_core.verb:set package 'mage_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[30.976s] Level 5:colcon.colcon_core.verb:set package 'mage_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[30.976s] Level 5:colcon.colcon_core.verb:set package 'mage_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[30.976s] Level 5:colcon.colcon_core.verb:set package 'mage_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[30.977s] Level 5:colcon.colcon_core.verb:set package 'mage_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[30.977s] DEBUG:colcon.colcon_core.verb:Building package 'mage_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/mage_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs', 'merge_install': False, 'path': '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/mage_msgs', 'symlink_install': False, 'test_result_base': None}
+[31.360s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_args' from command line to 'None'
+[31.361s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_target' from command line to 'None'
+[31.361s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[31.361s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_clean_cache' from command line to 'False'
+[31.361s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_clean_first' from command line to 'False'
+[31.361s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_force_configure' from command line to 'False'
+[31.361s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'ament_cmake_args' from command line to 'None'
+[31.361s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'catkin_cmake_args' from command line to 'None'
+[31.362s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'catkin_skip_building_tests' from command line to 'False'
+[31.362s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_aruco' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/ros2_aruco', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco', 'merge_install': False, 'path': '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/ros2_aruco/ros2_aruco', 'symlink_install': False, 'test_result_base': None}
+[31.747s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_args' from command line to 'None'
+[31.747s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_target' from command line to 'None'
+[31.748s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[31.748s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[31.748s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[31.749s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[31.749s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[31.749s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[31.749s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[31.750s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_aruco_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/ros2_aruco_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces', 'merge_install': False, 'path': '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/ros2_aruco/ros2_aruco_interfaces', 'symlink_install': False, 'test_result_base': None}
+[32.171s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'cmake_args' from command line to 'None'
+[32.172s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'cmake_target' from command line to 'None'
+[32.174s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[32.175s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'cmake_clean_cache' from command line to 'False'
+[32.176s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'cmake_clean_first' from command line to 'False'
+[32.177s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'cmake_force_configure' from command line to 'False'
+[32.178s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'ament_cmake_args' from command line to 'None'
+[32.178s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'catkin_cmake_args' from command line to 'None'
+[32.178s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[32.179s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_fake_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_fake_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node', 'merge_install': False, 'path': '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/turtlebot3_simulations/turtlebot3_fake_node', 'symlink_install': False, 'test_result_base': None}
+[32.556s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_args' from command line to 'None'
+[32.557s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_target' from command line to 'None'
+[32.557s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[32.557s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[32.557s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[32.557s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[32.557s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[32.557s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[32.558s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[32.558s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo', 'merge_install': False, 'path': '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/turtlebot3_simulations/turtlebot3_gazebo', 'symlink_install': False, 'test_result_base': None}
+[32.980s] Level 5:colcon.colcon_core.verb:set package 'group17' build argument 'cmake_args' from command line to 'None'
+[32.981s] Level 5:colcon.colcon_core.verb:set package 'group17' build argument 'cmake_target' from command line to 'None'
+[32.981s] Level 5:colcon.colcon_core.verb:set package 'group17' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[32.982s] Level 5:colcon.colcon_core.verb:set package 'group17' build argument 'cmake_clean_cache' from command line to 'False'
+[32.982s] Level 5:colcon.colcon_core.verb:set package 'group17' build argument 'cmake_clean_first' from command line to 'False'
+[32.983s] Level 5:colcon.colcon_core.verb:set package 'group17' build argument 'cmake_force_configure' from command line to 'False'
+[32.983s] Level 5:colcon.colcon_core.verb:set package 'group17' build argument 'ament_cmake_args' from command line to 'None'
+[32.983s] Level 5:colcon.colcon_core.verb:set package 'group17' build argument 'catkin_cmake_args' from command line to 'None'
+[32.983s] Level 5:colcon.colcon_core.verb:set package 'group17' build argument 'catkin_skip_building_tests' from command line to 'False'
+[32.983s] DEBUG:colcon.colcon_core.verb:Building package 'group17' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/group17', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/group17', 'merge_install': False, 'path': '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17', 'symlink_install': False, 'test_result_base': None}
+[33.348s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_sensors' build argument 'cmake_args' from command line to 'None'
+[33.349s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_sensors' build argument 'cmake_target' from command line to 'None'
+[33.349s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_sensors' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[33.350s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_sensors' build argument 'cmake_clean_cache' from command line to 'False'
+[33.350s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_sensors' build argument 'cmake_clean_first' from command line to 'False'
+[33.350s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_sensors' build argument 'cmake_force_configure' from command line to 'False'
+[33.350s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_sensors' build argument 'ament_cmake_args' from command line to 'None'
+[33.350s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_sensors' build argument 'catkin_cmake_args' from command line to 'None'
+[33.350s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_sensors' build argument 'catkin_skip_building_tests' from command line to 'False'
+[33.350s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_sensors' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_sensors', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors', 'merge_install': False, 'path': '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/turtlebot3_sensors', 'symlink_install': False, 'test_result_base': None}
+[33.701s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'cmake_args' from command line to 'None'
+[33.701s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'cmake_target' from command line to 'None'
+[33.701s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[33.701s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'cmake_clean_cache' from command line to 'False'
+[33.701s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'cmake_clean_first' from command line to 'False'
+[33.702s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'cmake_force_configure' from command line to 'False'
+[33.702s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'ament_cmake_args' from command line to 'None'
+[33.702s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'catkin_cmake_args' from command line to 'None'
+[33.702s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'catkin_skip_building_tests' from command line to 'False'
+[33.702s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_simulations' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_simulations', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_simulations', 'merge_install': False, 'path': '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/turtlebot3_simulations/turtlebot3_simulations', 'symlink_install': False, 'test_result_base': None}
+[34.089s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[34.436s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[34.437s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/mage_msgs' with build type 'ament_cmake'
+[34.437s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/mage_msgs'
+[34.913s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[34.914s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[34.914s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[37.019s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/turtlebot3_simulations/turtlebot3_fake_node' with build type 'ament_cmake'
+[37.021s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/turtlebot3_simulations/turtlebot3_fake_node'
+[37.505s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[37.505s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[39.871s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/turtlebot3_simulations/turtlebot3_gazebo' with build type 'ament_cmake'
+[39.875s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/turtlebot3_simulations/turtlebot3_gazebo'
+[40.371s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[40.371s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[42.623s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/ros2_aruco/ros2_aruco' with build type 'ament_python'
+[42.624s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco', 'ament_prefix_path')
+[43.109s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco/share/ros2_aruco/hook/ament_prefix_path.ps1'
+[43.118s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco/share/ros2_aruco/hook/ament_prefix_path.dsv'
+[43.120s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco/share/ros2_aruco/hook/ament_prefix_path.sh'
+[43.479s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[43.479s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[45.469s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/ros2_aruco/ros2_aruco_interfaces' with build type 'ament_cmake'
+[45.473s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/ros2_aruco/ros2_aruco_interfaces'
+[45.939s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[45.940s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[48.306s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/mage_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake --build /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/mage_msgs -- -j8 -l8
+[48.377s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake --build /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_fake_node -- -j8 -l8
+[48.423s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake --build /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_gazebo -- -j8 -l8
+[50.438s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/ros2_aruco/ros2_aruco'
+[50.845s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[50.846s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[53.107s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake --build /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/ros2_aruco_interfaces -- -j8 -l8
+[53.194s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/mage_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake --build /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/mage_msgs -- -j8 -l8
+[53.237s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_fake_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake --build /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_fake_node -- -j8 -l8
+[53.656s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake --install /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_fake_node
+[53.745s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_fake_node)
+[53.776s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_fake_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake --install /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_fake_node
+[54.147s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node' for CMake module files
+[54.150s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node' for CMake config files
+[54.152s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_fake_node', 'cmake_prefix_path')
+[54.567s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/hook/cmake_prefix_path.ps1'
+[54.574s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/hook/cmake_prefix_path.dsv'
+[54.575s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/hook/cmake_prefix_path.sh'
+[54.583s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/lib'
+[54.590s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/bin'
+[54.592s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/lib/pkgconfig/turtlebot3_fake_node.pc'
+[54.597s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/lib/python3.8/site-packages'
+[54.601s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/bin'
+[55.124s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.ps1'
+[55.131s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.dsv'
+[55.140s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.sh'
+[55.147s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.bash'
+[55.149s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.zsh'
+[55.153s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/colcon-core/packages/turtlebot3_fake_node)
+[55.216s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/mage_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake --install /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/mage_msgs
+[56.003s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_fake_node)
+[56.429s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node' for CMake module files
+[56.432s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node' for CMake config files
+[56.440s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_fake_node', 'cmake_prefix_path')
+[56.776s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/hook/cmake_prefix_path.ps1'
+[56.786s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/hook/cmake_prefix_path.dsv'
+[56.789s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/hook/cmake_prefix_path.sh'
+[56.791s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/lib'
+[56.791s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/bin'
+[56.792s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/lib/pkgconfig/turtlebot3_fake_node.pc'
+[56.792s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/lib/python3.8/site-packages'
+[56.793s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/bin'
+[57.211s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.ps1'
+[57.217s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.dsv'
+[57.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.sh'
+[57.228s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.bash'
+[57.229s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.zsh'
+[57.230s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/colcon-core/packages/turtlebot3_fake_node)
+[57.252s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake --build /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/ros2_aruco_interfaces -- -j8 -l8
+[57.271s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mage_msgs)
+[57.273s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/mage_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake --install /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/mage_msgs
+[57.761s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs' for CMake module files
+[57.773s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs' for CMake config files
+[57.781s] Level 1:colcon.colcon_core.shell:create_environment_hook('mage_msgs', 'cmake_prefix_path')
+[58.221s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/share/mage_msgs/hook/cmake_prefix_path.ps1'
+[58.226s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/share/mage_msgs/hook/cmake_prefix_path.dsv'
+[58.227s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/share/mage_msgs/hook/cmake_prefix_path.sh'
+[58.229s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib'
+[58.230s] Level 1:colcon.colcon_core.shell:create_environment_hook('mage_msgs', 'ld_library_path_lib')
+[58.603s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/share/mage_msgs/hook/ld_library_path_lib.ps1'
+[58.605s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/share/mage_msgs/hook/ld_library_path_lib.dsv'
+[58.611s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/share/mage_msgs/hook/ld_library_path_lib.sh'
+[58.617s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/bin'
+[58.624s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib/pkgconfig/mage_msgs.pc'
+[58.626s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib/python3.8/site-packages'
+[58.627s] Level 1:colcon.colcon_core.shell:create_environment_hook('mage_msgs', 'pythonpath')
+[59.049s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/share/mage_msgs/hook/pythonpath.ps1'
+[59.053s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/share/mage_msgs/hook/pythonpath.dsv'
+[59.055s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/share/mage_msgs/hook/pythonpath.sh'
+[59.062s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/bin'
+[59.439s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/share/mage_msgs/package.ps1'
+[59.446s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/share/mage_msgs/package.dsv'
+[59.449s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/share/mage_msgs/package.sh'
+[59.453s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/share/mage_msgs/package.bash'
+[59.456s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/share/mage_msgs/package.zsh'
+[59.458s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/share/colcon-core/packages/mage_msgs)
+[59.477s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake --build /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_gazebo -- -j8 -l8
+[59.547s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/ros2_aruco/ros2_aruco': PYTHONPATH=/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/ros2_aruco/prefix_override:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/ros2_aruco build --build-base /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/ros2_aruco/build install --record /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/ros2_aruco/install.log --install-scripts $base/lib/ros2_aruco --single-version-externally-managed
+[59.606s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake --install /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/ros2_aruco_interfaces
+[59.994s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake --install /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_gazebo
+[60.043s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_aruco_interfaces)
+[60.074s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake --install /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/ros2_aruco_interfaces
+[60.549s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete was interrupted
+[60.549s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete again
+[60.696s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished
+[60.697s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[60.697s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[60.698s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[61.088s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[61.089s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[61.089s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[61.268s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[61.765s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/local_setup.ps1'
+[61.770s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/_local_setup_util_ps1.py'
+[61.774s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/setup.ps1'
+[62.177s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/local_setup.sh'
+[62.184s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/_local_setup_util_sh.py'
+[62.188s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/setup.sh'
+[62.585s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/local_setup.bash'
+[62.594s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/setup.bash'
+[63.063s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/local_setup.zsh'
+[63.066s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/setup.zsh'

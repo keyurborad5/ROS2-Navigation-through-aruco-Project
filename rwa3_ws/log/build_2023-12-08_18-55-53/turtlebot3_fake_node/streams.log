@@ -1,0 +1,84 @@
+[1.147s] Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/turtlebot3_simulations/turtlebot3_fake_node -DCMAKE_INSTALL_PREFIX=/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node
+[4.150s] -- The C compiler identification is GNU 9.4.0
+[5.353s] -- The CXX compiler identification is GNU 9.4.0
+[5.423s] -- Check for working C compiler: /usr/bin/cc
+[5.715s] -- Check for working C compiler: /usr/bin/cc -- works
+[5.897s] -- Detecting C compiler ABI info
+[6.095s] -- Detecting C compiler ABI info - done
+[6.110s] -- Detecting C compile features
+[6.111s] -- Detecting C compile features - done
+[6.115s] -- Check for working CXX compiler: /usr/bin/c++
+[6.228s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[6.230s] -- Detecting CXX compiler ABI info
+[6.348s] -- Detecting CXX compiler ABI info - done
+[6.368s] -- Detecting CXX compile features
+[6.370s] -- Detecting CXX compile features - done
+[7.207s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[7.773s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[7.774s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[8.409s] -- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+[9.286s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[9.388s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[9.965s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[10.037s] -- Found FastRTPS: /opt/ros/galactic/include  
+[10.649s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[11.009s] -- Found nav_msgs: 2.2.4 (/opt/ros/galactic/share/nav_msgs/cmake)
+[11.160s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[12.223s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[12.244s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[12.374s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[12.376s] -- Looking for pthread.h
+[12.478s] -- Looking for pthread.h - found
+[12.479s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[12.578s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[12.578s] -- Looking for pthread_create in pthreads
+[12.662s] -- Looking for pthread_create in pthreads - not found
+[12.662s] -- Looking for pthread_create in pthread
+[12.751s] -- Looking for pthread_create in pthread - found
+[12.753s] -- Found Threads: TRUE  
+[13.309s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[13.614s] -- Found tf2: 0.17.5 (/opt/ros/galactic/share/tf2/cmake)
+[13.851s] -- Found tf2_msgs: 0.17.5 (/opt/ros/galactic/share/tf2_msgs/cmake)
+[14.732s] -- Found turtlebot3_msgs: 2.2.2 (/opt/ros/galactic/share/turtlebot3_msgs/cmake)
+[15.274s] -- Configuring done
+[15.322s] -- Generating done
+[15.327s] -- Build files have been written to: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_fake_node
+[15.353s] Invoked command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_fake_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/turtlebot3_simulations/turtlebot3_fake_node -DCMAKE_INSTALL_PREFIX=/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node
+[15.359s] Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_fake_node -- -j8 -l8
+[15.446s] [35m[1mScanning dependencies of target turtlebot3_fake_node[0m
+[21.617s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlebot3_fake_node.dir/src/turtlebot3_fake_node.cpp.o[0m
+[35.435s] [100%] [32m[1mLinking CXX executable turtlebot3_fake_node[0m
+[38.129s] [100%] Built target turtlebot3_fake_node
+[38.153s] Invoked command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_fake_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_fake_node -- -j8 -l8
+[38.210s] Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_fake_node
+[38.229s] -- Install configuration: ""
+[38.230s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/lib/turtlebot3_fake_node/turtlebot3_fake_node
+[38.237s] -- Set runtime path of "/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/lib/turtlebot3_fake_node/turtlebot3_fake_node" to ""
+[38.237s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch
+[38.238s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch/rviz2.launch.py
+[38.238s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch/turtlebot3_fake_node.launch.py
+[38.238s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param
+[38.239s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/waffle_pi.yaml
+[38.239s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/burger.yaml
+[38.239s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/waffle.yaml
+[38.239s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/include/
+[38.240s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/include//turtlebot3_fake_node
+[38.240s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/include//turtlebot3_fake_node/turtlebot3_fake_node.hpp
+[38.240s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/ament_index/resource_index/package_run_dependencies/turtlebot3_fake_node
+[38.240s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/ament_index/resource_index/parent_prefix_path/turtlebot3_fake_node
+[38.241s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/ament_prefix_path.sh
+[38.241s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/ament_prefix_path.dsv
+[38.241s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/path.sh
+[38.241s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/path.dsv
+[38.242s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.bash
+[38.242s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.sh
+[38.242s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.zsh
+[38.242s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.dsv
+[38.243s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.dsv
+[38.243s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/ament_index/resource_index/packages/turtlebot3_fake_node
+[38.244s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/ament_cmake_export_include_directories-extras.cmake
+[38.244s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/ament_cmake_export_dependencies-extras.cmake
+[38.244s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/turtlebot3_fake_nodeConfig.cmake
+[38.245s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/turtlebot3_fake_nodeConfig-version.cmake
+[38.245s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.xml
+[38.249s] Invoked command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_fake_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_fake_node

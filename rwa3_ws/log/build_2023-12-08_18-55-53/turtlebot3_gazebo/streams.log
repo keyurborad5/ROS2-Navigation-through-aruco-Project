@@ -1,0 +1,346 @@
+[0.927s] Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/turtlebot3_simulations/turtlebot3_gazebo -DCMAKE_INSTALL_PREFIX=/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo
+[3.933s] -- The C compiler identification is GNU 9.4.0
+[5.124s] -- The CXX compiler identification is GNU 9.4.0
+[5.195s] -- Check for working C compiler: /usr/bin/cc
+[5.487s] -- Check for working C compiler: /usr/bin/cc -- works
+[5.668s] -- Detecting C compiler ABI info
+[5.865s] -- Detecting C compiler ABI info - done
+[5.894s] -- Detecting C compile features
+[5.895s] -- Detecting C compile features - done
+[5.900s] -- Check for working CXX compiler: /usr/bin/c++
+[6.025s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[6.028s] -- Detecting CXX compiler ABI info
+[6.151s] -- Detecting CXX compiler ABI info - done
+[6.165s] -- Detecting CXX compile features
+[6.166s] -- Detecting CXX compile features - done
+[6.978s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[7.543s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[7.543s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[8.554s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+[8.588s] -- Checking for module 'bullet>=2.82'
+[9.066s] --   Found bullet, version 2.88
+[9.677s] -- Found ccd: /usr/include (found suitable version "2.0", minimum required is "2.0") 
+[9.759s] -- Found fcl: /usr/include (found suitable version "0.5.0", minimum required is "0.3.2") 
+[9.903s] -- Found assimp: /usr/include (found version "5.0.0") 
+[10.262s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[11.156s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found suitable version "1.71.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[11.733s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "3.6.1") 
+[11.880s] -- Looking for ignition-math6 -- found version 6.15.0
+[12.102s] -- Searching for dependencies of ignition-math6
+[12.128s] -- Looking for OGRE...
+[12.129s] -- OGRE_PREFIX_WATCH changed.
+[12.135s] -- Checking for module 'OGRE'
+[12.158s] --   Found OGRE, version 1.9.0
+[12.282s] -- Found Ogre Ghadamon (1.9.0)
+[12.311s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[12.333s] -- Looking for OGRE_Paging...
+[12.348s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[12.349s] -- Looking for OGRE_Terrain...
+[12.359s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[12.359s] -- Looking for OGRE_Property...
+[12.369s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[12.369s] -- Looking for OGRE_RTShaderSystem...
+[12.379s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[12.379s] -- Looking for OGRE_Volume...
+[12.389s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[12.389s] -- Looking for OGRE_Overlay...
+[12.402s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[12.652s] -- Looking for ignition-math6 -- found version 6.15.0
+[12.670s] -- Looking for ignition-transport8 -- found version 8.3.0
+[12.670s] -- Searching for dependencies of ignition-transport8
+[12.839s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found suitable version "3.6.1", minimum required is "3") 
+[12.863s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[12.869s] -- Checking for module 'libzmq >= 4'
+[13.018s] --   Found libzmq , version 4.3.2
+[13.071s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[13.192s] -- Checking for module 'uuid'
+[13.239s] --   Found uuid, version 2.34.0
+[13.289s] -- Found UUID: TRUE  
+[13.309s] -- Looking for ignition-msgs5 -- found version 5.10.0
+[13.310s] -- Searching for dependencies of ignition-msgs5
+[13.347s] -- Looking for ignition-math6 -- found version 6.15.0
+[13.356s] -- Checking for module 'tinyxml2'
+[13.398s] --   Found tinyxml2, version 6.2.0
+[13.585s] -- Looking for ignition-msgs5 -- found version 5.10.0
+[13.597s] -- Looking for ignition-common3 -- found version 3.14.2
+[13.598s] -- Searching for dependencies of ignition-common3
+[13.610s] -- Looking for dlfcn.h - found
+[13.612s] -- Looking for libdl - found
+[13.615s] -- Found DL: TRUE  
+[13.696s] -- Searching for <ignition-common3> component [graphics]
+[13.729s] -- Looking for ignition-common3-graphics -- found version 3.14.2
+[13.730s] -- Searching for dependencies of ignition-common3-graphics
+[13.731s] -- Looking for ignition-math6 -- found version 6.15.0
+[13.751s] -- Looking for ignition-fuel_tools4 -- found version 4.6.0
+[13.752s] -- Searching for dependencies of ignition-fuel_tools4
+[13.963s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.68.0")  
+[14.002s] -- Checking for module 'jsoncpp'
+[14.039s] --   Found jsoncpp, version 1.7.4
+[14.136s] -- Found JSONCPP: TRUE  
+[14.155s] -- Checking for module 'libzip'
+[14.514s] --   Found libzip, version 1.5.1
+[14.610s] -- Found ZIP: TRUE  
+[14.612s] -- Looking for ignition-common3 -- found version 3.14.2
+[14.613s] -- Looking for ignition-math6 -- found version 6.15.0
+[14.614s] -- Looking for ignition-msgs5 -- found version 5.10.0
+[14.647s] -- Found gazebo_ros_pkgs: 3.5.2 (/opt/ros/galactic/share/gazebo_ros_pkgs/cmake)
+[14.651s] -- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+[14.727s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[14.747s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[15.004s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[15.103s] -- Found FastRTPS: /opt/ros/galactic/include  
+[15.305s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[15.537s] -- Found nav_msgs: 2.2.4 (/opt/ros/galactic/share/nav_msgs/cmake)
+[15.672s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[15.782s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[15.792s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[15.861s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[15.865s] -- Found Threads: TRUE  
+[16.048s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[16.130s] -- Found tf2: 0.17.5 (/opt/ros/galactic/share/tf2/cmake)
+[16.432s] -- Configuring done
+[20.244s] -- Generating done
+[20.247s] -- Build files have been written to: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_gazebo
+[20.262s] Invoked command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/turtlebot3_simulations/turtlebot3_gazebo -DCMAKE_INSTALL_PREFIX=/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo
+[20.264s] Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_gazebo -- -j8 -l8
+[20.326s] [35m[1mScanning dependencies of target turtlebot3_drive[0m
+[20.330s] [35m[1mScanning dependencies of target ament_cmake_python_copy_turtlebot3_gazebo_setup[0m
+[20.330s] [35m[1mScanning dependencies of target obstacle1[0m
+[20.330s] [35m[1mScanning dependencies of target ament_cmake_python_copy_turtlebot3_gazebo[0m
+[20.330s] [35m[1mScanning dependencies of target obstacles[0m
+[20.330s] [35m[1mScanning dependencies of target obstacle2[0m
+[20.356s] [  0%] Built target ament_cmake_python_copy_turtlebot3_gazebo
+[20.356s] [  0%] Built target ament_cmake_python_copy_turtlebot3_gazebo_setup
+[20.370s] [35m[1mScanning dependencies of target ament_cmake_python_build_turtlebot3_gazebo_scripts[0m
+[20.370s] [35m[1mScanning dependencies of target ament_cmake_python_build_turtlebot3_gazebo_egg[0m
+[20.648s] running install_scripts
+[20.650s] running egg_info
+[20.651s] creating turtlebot3_gazebo.egg-info
+[20.651s] writing turtlebot3_gazebo.egg-info/PKG-INFO
+[20.652s] writing dependency_links to turtlebot3_gazebo.egg-info/dependency_links.txt
+[20.652s] writing entry points to turtlebot3_gazebo.egg-info/entry_points.txt
+[20.652s] writing top-level names to turtlebot3_gazebo.egg-info/top_level.txt
+[20.654s] writing manifest file 'turtlebot3_gazebo.egg-info/SOURCES.txt'
+[20.676s] running egg_info
+[20.677s] writing turtlebot3_gazebo.egg-info/PKG-INFO
+[20.678s] writing dependency_links to turtlebot3_gazebo.egg-info/dependency_links.txt
+[20.678s] writing entry points to turtlebot3_gazebo.egg-info/entry_points.txt
+[20.678s] writing top-level names to turtlebot3_gazebo.egg-info/top_level.txt
+[20.697s] reading manifest file 'turtlebot3_gazebo.egg-info/SOURCES.txt'
+[20.698s] writing manifest file 'turtlebot3_gazebo.egg-info/SOURCES.txt'
+[20.720s] reading manifest file 'turtlebot3_gazebo.egg-info/SOURCES.txt'
+[20.720s] writing manifest file 'turtlebot3_gazebo.egg-info/SOURCES.txt'
+[20.729s] [  0%] Built target ament_cmake_python_build_turtlebot3_gazebo_egg
+[20.788s] Installing spawner script to scripts
+[20.827s] [  0%] Built target ament_cmake_python_build_turtlebot3_gazebo_scripts
+[21.365s] [ 12%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o[0m
+[27.676s] [ 25%] [32mBuilding CXX object CMakeFiles/obstacle1.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc.o[0m
+[27.718s] [ 37%] [32mBuilding CXX object CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o[0m
+[27.720s] [ 50%] [32mBuilding CXX object CMakeFiles/obstacles.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc.o[0m
+[37.237s] [ 62%] [32m[1mLinking CXX executable turtlebot3_drive[0m
+[38.239s] [ 62%] Built target turtlebot3_drive
+[49.546s] [100%] [32m[1mLinking CXX shared library libobstacle2.so[0m
+[49.546s] [100%] [32m[1mLinking CXX shared library libobstacle1.so[0m
+[49.546s] [100%] [32m[1mLinking CXX shared library libobstacles.so[0m
+[53.330s] [100%] Built target obstacles
+[53.350s] [100%] Built target obstacle1
+[53.351s] [100%] Built target obstacle2
+[53.367s] Invoked command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_gazebo -- -j8 -l8
+[53.416s] Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_gazebo
+[53.425s] -- Install configuration: ""
+[53.425s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_drive
+[53.431s] -- Set runtime path of "/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_drive" to ""
+[53.431s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch
+[53.431s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage3.launch.py
+[53.431s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_world.launch.py
+[53.431s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/spawn_turtlebot3.launch.py
+[53.431s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/empty_world.launch.py
+[53.432s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/robot_state_publisher.launch.py
+[53.432s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage1.launch.py
+[53.432s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/maze.launch.py
+[53.432s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage4.launch.py
+[53.432s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage2.launch.py
+[53.433s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_house.launch.py
+[53.433s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models
+[53.433s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/battery
+[53.433s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/battery/model.sdf
+[53.433s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/battery/model.config
+[53.434s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/battery/meshes
+[53.434s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/battery/meshes/battery_pins.stl
+[53.434s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/battery/meshes/battery_base.stl
+[53.434s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/battery/meshes/battery_cap.stl
+[53.434s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/battery/meshes/battery_collision.stl
+[53.435s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_3
+[53.435s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_3/materials
+[53.435s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_3/materials/scripts
+[53.435s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_3/materials/scripts/marker.material
+[53.435s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_3/materials/textures
+[53.435s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_3/materials/textures/marker_3.png
+[53.436s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_3/model.sdf
+[53.436s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_3/model.config
+[53.436s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common
+[53.436s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/model.config
+[53.436s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes
+[53.437s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_base.dae
+[53.437s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/lds.dae
+[53.437s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/burger_base.dae
+[53.437s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_pi_base.dae
+[53.437s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/camera.dae
+[53.438s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/tire.dae
+[53.438s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/r200.dae
+[53.438s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/sensor
+[53.438s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/sensor/model.sdf
+[53.438s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/sensor/model.config
+[53.439s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/sensor/meshes
+[53.439s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/sensor/meshes/sensor_collision.stl
+[53.439s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/sensor/meshes/sensor_peg.stl
+[53.439s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/sensor/meshes/sensor_base.stl
+[53.439s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world
+[53.439s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls
+[53.440s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.sdf
+[53.440s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.config
+[53.440s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2
+[53.440s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.sdf
+[53.440s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.config
+[53.441s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.sdf
+[53.441s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.config
+[53.441s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin
+[53.441s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc
+[53.441s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/CMakeLists.txt
+[53.442s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc
+[53.442s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc
+[53.442s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box
+[53.442s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.sdf
+[53.442s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.config
+[53.442s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles
+[53.443s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.sdf
+[53.443s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.config
+[53.443s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1
+[53.444s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.sdf
+[53.444s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.config
+[53.444s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger
+[53.444s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.sdf
+[53.444s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.config
+[53.444s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model-1_4.sdf
+[53.445s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi
+[53.445s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.sdf
+[53.445s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.config
+[53.445s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model-1_4_.sdf
+[53.445s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/regulator
+[53.446s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/regulator/model.sdf
+[53.446s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/regulator/model.config
+[53.446s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/regulator/meshes
+[53.446s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/regulator/meshes/regulator_short_peg.stl
+[53.446s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/regulator/meshes/regulator_base.stl
+[53.447s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/regulator/meshes/regulator_long_peg.stl
+[53.447s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/regulator/meshes/regulator_collision.stl
+[53.447s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house
+[53.447s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.sdf
+[53.447s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.config
+[53.448s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle
+[53.448s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.sdf
+[53.448s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.config
+[53.448s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model-1_4.sdf
+[53.448s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/maze_world
+[53.449s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/maze_world/model.sdf
+[53.449s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/maze_world/model.config
+[53.449s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_2
+[53.449s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_2/materials
+[53.449s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_2/materials/scripts
+[53.449s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_2/materials/scripts/marker.material
+[53.450s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_2/materials/textures
+[53.450s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_2/materials/textures/marker_2.png
+[53.450s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_2/model.sdf
+[53.450s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_2/model.config
+[53.450s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pump
+[53.451s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pump/model.sdf
+[53.451s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pump/model.config
+[53.451s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pump/meshes
+[53.451s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pump/meshes/pump_collision.stl
+[53.451s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pump/meshes/pump_bottom_pane.stl
+[53.451s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pump/meshes/pump_base.stl
+[53.451s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pump/meshes/pump_front_pane.stl
+[53.452s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pump/meshes/pump_back_pane.stl
+[53.452s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pump/meshes/pump_right_pane.stl
+[53.452s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pump/meshes/pump_left_pane.stl
+[53.452s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pump/meshes/pump_enclosure.stl
+[53.452s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/pump/meshes/pump_top_pane.stl
+[53.452s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world
+[53.452s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.sdf
+[53.452s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.config
+[53.453s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model-1_4.sdf
+[53.453s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes
+[53.453s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/wall.dae
+[53.453s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/hexagon.dae
+[53.453s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_1
+[53.453s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_1/materials
+[53.453s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_1/materials/scripts
+[53.454s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_1/materials/scripts/marker.material
+[53.454s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_1/materials/textures
+[53.454s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_1/materials/textures/marker_1.png
+[53.454s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_1/model.sdf
+[53.454s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_1/model.config
+[53.454s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_0
+[53.454s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_0/materials
+[53.454s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_0/materials/scripts
+[53.455s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_0/materials/scripts/marker.material
+[53.455s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_0/materials/textures
+[53.455s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_0/materials/textures/marker_0.png
+[53.455s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_0/model.sdf
+[53.455s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/aruco_marker_0/model.config
+[53.455s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz
+[53.455s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz/tb3_gazebo.rviz
+[53.455s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf
+[53.455s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/common_properties.urdf
+[53.456s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_burger.urdf
+[53.456s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle_pi.urdf
+[53.456s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle.urdf
+[53.456s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds
+[53.456s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage3.world
+[53.456s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/empty_world.world
+[53.456s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage4.world
+[53.456s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_house.world
+[53.456s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/maze_world.world
+[53.456s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage1.world
+[53.456s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_world.world
+[53.456s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage2.world
+[53.457s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/include/
+[53.457s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo
+[53.457s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/turtlebot3_drive.hpp
+[53.457s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/pythonpath.sh
+[53.457s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/pythonpath.dsv
+[53.457s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages//turtlebot3_gazebo.egg-info
+[53.457s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages//turtlebot3_gazebo.egg-info/entry_points.txt
+[53.457s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages//turtlebot3_gazebo.egg-info/SOURCES.txt
+[53.457s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages//turtlebot3_gazebo.egg-info/top_level.txt
+[53.457s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages//turtlebot3_gazebo.egg-info/PKG-INFO
+[53.457s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages//turtlebot3_gazebo.egg-info/dependency_links.txt
+[53.457s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/
+[53.457s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/turtlebot3_gazebo//spawner
+[53.457s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages/turtlebot3_gazebo
+[53.457s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages/turtlebot3_gazebo/spawn_params.py
+[53.458s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages/turtlebot3_gazebo/utilities.py
+[53.458s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages/turtlebot3_gazebo/__init__.py
+[53.531s] Listing '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages/turtlebot3_gazebo'...
+[53.531s] Compiling '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages/turtlebot3_gazebo/__init__.py'...
+[53.531s] Compiling '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages/turtlebot3_gazebo/spawn_params.py'...
+[53.531s] Compiling '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages/turtlebot3_gazebo/utilities.py'...
+[53.536s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/part_spawner.py
+[53.536s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/ament_index/resource_index/package_run_dependencies/turtlebot3_gazebo
+[53.536s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/ament_index/resource_index/parent_prefix_path/turtlebot3_gazebo
+[53.536s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.sh
+[53.537s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.dsv
+[53.537s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.sh
+[53.537s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.dsv
+[53.537s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.bash
+[53.537s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.sh
+[53.537s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.zsh
+[53.538s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.dsv
+[53.538s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv
+[53.538s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/ament_index/resource_index/packages/turtlebot3_gazebo
+[53.538s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_include_directories-extras.cmake
+[53.538s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_dependencies-extras.cmake
+[53.538s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig.cmake
+[53.539s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig-version.cmake
+[53.539s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.xml
+[53.541s] Invoked command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/turtlebot3_gazebo
