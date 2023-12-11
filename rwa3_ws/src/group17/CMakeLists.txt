@@ -26,4 +26,33 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+# include folder whish has all the header files
+include_directories(include/group17)
+
+
+add_executable(broadcaster src/broadcaster.cpp src/utils.cpp)
+ament_target_dependencies(broadcaster ament_cmake rclcpp mage_msgs geometry_msgs std_msgs tf2_ros tf2 tf2_geometry_msgs)
+
+install(TARGETS broadcaster
+  RUNTIME DESTINATION lib/${PROJECT_NAME}
+)
+
+add_executable(listener src/listener.cpp src/utils.cpp)
+ament_target_dependencies(listener ament_cmake rclcpp mage_msgs geometry_msgs std_msgs tf2_ros tf2 tf2_geometry_msgs)
+
+install(TARGETS listener
+  RUNTIME DESTINATION lib/${PROJECT_NAME}
+)
+
+install(TARGETS
+broadcaster
+listener
+DESTINATION lib/${PROJECT_NAME}
+)
+
+
+install(DIRECTORY include
+  DESTINATION share/${PROJECT_NAME}/
+)
+
 ament_package()

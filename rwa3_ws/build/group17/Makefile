@@ -68,6 +68,28 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -100,28 +122,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -168,6 +168,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named listener
+
+# Build rule for target.
+listener: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 listener
+.PHONY : listener
+
+# fast build rule for target.
+listener/fast:
+	$(MAKE) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/build
+.PHONY : listener/fast
+
+#=============================================================================
+# Target rules for targets named broadcaster
+
+# Build rule for target.
+broadcaster: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 broadcaster
+.PHONY : broadcaster
+
+# fast build rule for target.
+broadcaster/fast:
+	$(MAKE) -f CMakeFiles/broadcaster.dir/build.make CMakeFiles/broadcaster.dir/build
+.PHONY : broadcaster/fast
+
+#=============================================================================
 # Target rules for targets named group17_uninstall
 
 # Build rule for target.
@@ -193,6 +219,90 @@ uninstall/fast:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
+src/broadcaster.o: src/broadcaster.cpp.o
+
+.PHONY : src/broadcaster.o
+
+# target to build an object file
+src/broadcaster.cpp.o:
+	$(MAKE) -f CMakeFiles/broadcaster.dir/build.make CMakeFiles/broadcaster.dir/src/broadcaster.cpp.o
+.PHONY : src/broadcaster.cpp.o
+
+src/broadcaster.i: src/broadcaster.cpp.i
+
+.PHONY : src/broadcaster.i
+
+# target to preprocess a source file
+src/broadcaster.cpp.i:
+	$(MAKE) -f CMakeFiles/broadcaster.dir/build.make CMakeFiles/broadcaster.dir/src/broadcaster.cpp.i
+.PHONY : src/broadcaster.cpp.i
+
+src/broadcaster.s: src/broadcaster.cpp.s
+
+.PHONY : src/broadcaster.s
+
+# target to generate assembly for a file
+src/broadcaster.cpp.s:
+	$(MAKE) -f CMakeFiles/broadcaster.dir/build.make CMakeFiles/broadcaster.dir/src/broadcaster.cpp.s
+.PHONY : src/broadcaster.cpp.s
+
+src/listener.o: src/listener.cpp.o
+
+.PHONY : src/listener.o
+
+# target to build an object file
+src/listener.cpp.o:
+	$(MAKE) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/listener.cpp.o
+.PHONY : src/listener.cpp.o
+
+src/listener.i: src/listener.cpp.i
+
+.PHONY : src/listener.i
+
+# target to preprocess a source file
+src/listener.cpp.i:
+	$(MAKE) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/listener.cpp.i
+.PHONY : src/listener.cpp.i
+
+src/listener.s: src/listener.cpp.s
+
+.PHONY : src/listener.s
+
+# target to generate assembly for a file
+src/listener.cpp.s:
+	$(MAKE) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/listener.cpp.s
+.PHONY : src/listener.cpp.s
+
+src/utils.o: src/utils.cpp.o
+
+.PHONY : src/utils.o
+
+# target to build an object file
+src/utils.cpp.o:
+	$(MAKE) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/utils.cpp.o
+	$(MAKE) -f CMakeFiles/broadcaster.dir/build.make CMakeFiles/broadcaster.dir/src/utils.cpp.o
+.PHONY : src/utils.cpp.o
+
+src/utils.i: src/utils.cpp.i
+
+.PHONY : src/utils.i
+
+# target to preprocess a source file
+src/utils.cpp.i:
+	$(MAKE) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/utils.cpp.i
+	$(MAKE) -f CMakeFiles/broadcaster.dir/build.make CMakeFiles/broadcaster.dir/src/utils.cpp.i
+.PHONY : src/utils.cpp.i
+
+src/utils.s: src/utils.cpp.s
+
+.PHONY : src/utils.s
+
+# target to generate assembly for a file
+src/utils.cpp.s:
+	$(MAKE) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/utils.cpp.s
+	$(MAKE) -f CMakeFiles/broadcaster.dir/build.make CMakeFiles/broadcaster.dir/src/utils.cpp.s
+.PHONY : src/utils.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -200,14 +310,25 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/local"
+	@echo "... edit_cache"
+	@echo "... test"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... test"
+	@echo "... listener"
+	@echo "... broadcaster"
 	@echo "... install/strip"
 	@echo "... group17_uninstall"
 	@echo "... uninstall"
+	@echo "... src/broadcaster.o"
+	@echo "... src/broadcaster.i"
+	@echo "... src/broadcaster.s"
+	@echo "... src/listener.o"
+	@echo "... src/listener.i"
+	@echo "... src/listener.s"
+	@echo "... src/utils.o"
+	@echo "... src/utils.i"
+	@echo "... src/utils.s"
 .PHONY : help
 
 
