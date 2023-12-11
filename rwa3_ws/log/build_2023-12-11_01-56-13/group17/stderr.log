@@ -1,0 +1,4 @@
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:[m[K In member function ‘[01m[Kvoid MyRobotNode::aruco_marker_sub_cb(ros2_aruco_interfaces::msg::ArucoMarkers_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:70:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   70 | void MyRobotNode::aruco_marker_sub_cb([01;35m[Kros2_aruco_interfaces::msg::ArucoMarkers::SharedPtr msg[m[K){
+      |                                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K

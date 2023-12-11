@@ -14,6 +14,7 @@ find_package(std_msgs REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
+find_package(ros2_aruco_interfaces REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -30,8 +31,9 @@ endif()
 include_directories(include/group17)
 
 
+
 add_executable(my_robot_node src/my_robot_node.cpp src/utils.cpp)
-ament_target_dependencies(my_robot_node ament_cmake rclcpp mage_msgs geometry_msgs std_msgs tf2_ros tf2 tf2_geometry_msgs)
+ament_target_dependencies(my_robot_node ament_cmake rclcpp mage_msgs geometry_msgs std_msgs tf2_ros tf2 tf2_geometry_msgs ros2_aruco_interfaces)
 
 install(TARGETS my_robot_node
   RUNTIME DESTINATION lib/${PROJECT_NAME}

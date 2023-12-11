@@ -1,0 +1,8 @@
+In file included from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1[m[K:
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:13:10:[m[K [01;31m[Kfatal error: [m[Kros2_aruco_interfaces/msg/aruco_markers.hpp: No such file or directory
+   13 | #include [01;31m[K<ros2_aruco_interfaces/msg/aruco_markers.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/my_robot_node.dir/build.make:63: CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/my_robot_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

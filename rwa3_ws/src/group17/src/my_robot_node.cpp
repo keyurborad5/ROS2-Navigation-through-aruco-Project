@@ -12,35 +12,37 @@ using namespace std::chrono_literals;
 
 
 
-void MyRobotNode::broadcast_timer_cb_()
+void MyRobotNode::aruco_broadcaster(ros2_aruco_interfaces::msg::ArucoMarkers::SharedPtr msg)
 {
-    geometry_msgs::msg::TransformStamped dynamic_transform_stamped;
+    geometry_msgs::msg::TransformStamped aruco_dynamic_transform_stamped;
 
     // RCLCPP_INFO(this->get_logger(), "Broadcasting dynamic_frame");
-    dynamic_transform_stamped.header.stamp = this->get_clock()->now();
-    dynamic_transform_stamped.header.frame_id = "camera_rgb_optical_frame";
-    dynamic_transform_stamped.child_frame_id = "aruco_mark";
+    aruco_dynamic_transform_stamped.header.stamp = msg->header.stamp;
 
-    dynamic_transform_stamped.transform.translation.x = 0.0;
-    dynamic_transform_stamped.transform.translation.y = 1.0;
-    dynamic_transform_stamped.transform.translation.z = -0.2;
+    aruco_dynamic_transform_stamped.header.frame_id = msg->header.frame_id;
+    aruco_dynamic_transform_stamped.child_frame_id = "aruco_mark";
 
-    geometry_msgs::msg::Quaternion quaternion = utils_ptr_->set_quaternion_from_euler(M_PI, 0.0, M_PI / 3);
-    dynamic_transform_stamped.transform.rotation.x = quaternion.x;
-    dynamic_transform_stamped.transform.rotation.y = quaternion.y;
-    dynamic_transform_stamped.transform.rotation.z = quaternion.z;
-    dynamic_transform_stamped.transform.rotation.w = quaternion.w;
+    aruco_dynamic_transform_stamped.transform.translation.x = msg->poses[0].position.x;
+    aruco_dynamic_transform_stamped.transform.translation.y = msg->poses[0].position.y;
+    aruco_dynamic_transform_stamped.transform.translation.z = msg->poses[0].position.z;
+
+    //geometry_msgs::msg::Quaternion quaternion = utils_ptr_->set_quaternion_from_euler(M_PI, 0.0, M_PI / 3);
+    aruco_dynamic_transform_stamped.transform.rotation.x = msg->poses[0].orientation.x;
+    aruco_dynamic_transform_stamped.transform.rotation.y = msg->poses[0].orientation.y;
+    aruco_dynamic_transform_stamped.transform.rotation.z = msg->poses[0].orientation.z;
+    aruco_dynamic_transform_stamped.transform.rotation.w = msg->poses[0].orientation.w;
     // Send the transform
-    tf_broadcaster_->sendTransform(dynamic_transform_stamped);
+    aruco_tf_broadcaster_->sendTransform(aruco_dynamic_transform_stamped);
+    RCLCPP_INFO_STREAM(this->get_logger(), "Aruco Broadcasting_dynamic_frame : "<<msg->poses[0].position.x);
 }
 
-void MyRobotNode::listen_transform(const std::string &source_frame, const std::string &target_frame)
+void MyRobotNode::aruco_listen_transform(const std::string &source_frame, const std::string &target_frame)
 {
     geometry_msgs::msg::TransformStamped t_stamped;
     geometry_msgs::msg::Pose pose_out;
     try
     {
-        t_stamped = tf_listener_buffer_->lookupTransform(source_frame, target_frame, tf2::TimePointZero, 50ms);
+        t_stamped = aruco_tf_listener_buffer_->lookupTransform(source_frame, target_frame, tf2::TimePointZero, 50ms);
     }
     catch (const tf2::TransformException &ex)
     {
@@ -53,20 +55,28 @@ void MyRobotNode::listen_transform(const std::string &source_frame, const std::s
     pose_out.position.z = t_stamped.transform.translation.z;
     pose_out.orientation = t_stamped.transform.rotation;
 
-    RCLCPP_INFO_STREAM(this->get_logger(), target_frame << " in " << source_frame << ":\n"
-                                                        << "x: " << pose_out.position.x << "\t"
-                                                        << "y: " << pose_out.position.y << "\t"
-                                                        << "z: " << pose_out.position.z << "\n"
-                                                        << "qx: " << pose_out.orientation.x << "\t"
-                                                        << "qy: " << pose_out.orientation.y << "\t"
-                                                        << "qz: " << pose_out.orientation.z << "\t"
-                                                        << "qw: " << pose_out.orientation.w << "\n");
-}
-void MyRobotNode::listen_timer_cb_()
-{
-    listen_transform("odom", "aruco_mark");
+    // RCLCPP_INFO_STREAM(this->get_logger(), target_frame << " in " << source_frame << ":\n"
+    //                                                     << "x: " << pose_out.position.x << "\t"
+    //                                                     << "y: " << pose_out.position.y << "\t"
+    //                                                     << "z: " << pose_out.position.z << "\n"
+    //                                                     << "qx: " << pose_out.orientation.x << "\t"
+    //                                                     << "qy: " << pose_out.orientation.y << "\t"
+    //                                                     << "qz: " << pose_out.orientation.z << "\t"
+    //                                                     << "qw: " << pose_out.orientation.w << "\n");
 }
 
+void MyRobotNode::aruco_marker_sub_cb(ros2_aruco_interfaces::msg::ArucoMarkers::SharedPtr msg){
+    
+    RCLCPP_INFO_STREAM(this->get_logger(),"Aruco marker callback ");
+    
+    aruco_broadcaster(msg);
+
+    aruco_listen_transform("odom", "aruco_mark");
+
+
+    
+
+}
 
 int main(int argc, char** argv) {
   rclcpp::init(argc, argv);

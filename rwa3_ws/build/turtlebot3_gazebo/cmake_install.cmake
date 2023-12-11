@@ -64,6 +64,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/rviz"
     "/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/urdf"
     "/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/worlds"
+    "/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/map"
     )
 endif()
 

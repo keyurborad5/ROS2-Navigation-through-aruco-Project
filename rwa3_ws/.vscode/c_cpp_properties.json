@@ -14,7 +14,10 @@
                 "/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node",
                 "/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/listener",
                 "/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/utils",
-                "${workspaceFolder}/src/group17/include/group17/**"
+                "${workspaceFolder}/src/group17/include/group17/**",
+                "${workspaceFolder}/install/ros2_aruco_interfaces/include"
+                //"/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/include"
+
             ],
             "name": "ROS",
             "intelliSenseMode": "gcc-x64",

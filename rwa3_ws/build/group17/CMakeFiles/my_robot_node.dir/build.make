@@ -98,6 +98,10 @@ my_robot_node: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/instal
 my_robot_node: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib/libmage_msgs__rosidl_typesupport_c.so
 my_robot_node: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib/libmage_msgs__rosidl_typesupport_introspection_cpp.so
 my_robot_node: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib/libmage_msgs__rosidl_typesupport_cpp.so
+my_robot_node: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_introspection_c.so
+my_robot_node: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_c.so
+my_robot_node: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_introspection_cpp.so
+my_robot_node: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_cpp.so
 my_robot_node: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib/libmage_msgs__rosidl_generator_c.so
 my_robot_node: /opt/ros/galactic/lib/libstatic_transform_broadcaster_node.so
 my_robot_node: /opt/ros/galactic/lib/libtf2_ros.so
@@ -158,6 +162,9 @@ my_robot_node: /opt/ros/galactic/lib/librcl_interfaces__rosidl_typesupport_c.so
 my_robot_node: /opt/ros/galactic/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
 my_robot_node: /opt/ros/galactic/lib/librcl_interfaces__rosidl_typesupport_cpp.so
 my_robot_node: /opt/ros/galactic/lib/libtf2.so
+my_robot_node: /opt/ros/galactic/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
+my_robot_node: /opt/ros/galactic/lib/liborocos-kdl.so.1.4.0
+my_robot_node: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_generator_c.so
 my_robot_node: /opt/ros/galactic/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
 my_robot_node: /opt/ros/galactic/lib/libgeometry_msgs__rosidl_generator_c.so
 my_robot_node: /opt/ros/galactic/lib/libgeometry_msgs__rosidl_typesupport_c.so
@@ -180,8 +187,6 @@ my_robot_node: /opt/ros/galactic/lib/librosidl_typesupport_c.so
 my_robot_node: /opt/ros/galactic/lib/librcpputils.so
 my_robot_node: /opt/ros/galactic/lib/librosidl_runtime_c.so
 my_robot_node: /opt/ros/galactic/lib/librcutils.so
-my_robot_node: /opt/ros/galactic/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
-my_robot_node: /opt/ros/galactic/lib/liborocos-kdl.so.1.4.0
 my_robot_node: CMakeFiles/my_robot_node.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/group17/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable my_robot_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_robot_node.dir/link.txt --verbose=$(VERBOSE)

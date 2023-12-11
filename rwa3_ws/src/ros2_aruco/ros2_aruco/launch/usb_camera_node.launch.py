@@ -17,7 +17,6 @@ def generate_launch_description():
             output="screen",
             node_namespace=ns,
             parameters=[{"camera_calibration_file": "file:///home/spragunr/.ros/camera_info/camera.yaml"}],
-            #
             remappings=[
                 ('/camera/camera_info', '/camera/camera_info'),
                 ('/camera/image', '/camera/image_raw')]

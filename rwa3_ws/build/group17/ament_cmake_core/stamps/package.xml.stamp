@@ -20,6 +20,7 @@
   <depend>turtlebot3_fake_node</depend>
   <depend>turtlebot3_simulations</depend>
   <depend>turtlebot3_description</depend>
+  <depend>ros2_aruco_interfaces</depend>
 
 
   <test_depend>ament_lint_auto</test_depend>
