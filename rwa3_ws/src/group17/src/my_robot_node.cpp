@@ -1,4 +1,4 @@
-#include <broadcaster.hpp>
+#include <my_robot_node.hpp>
 #include "geometry_msgs/msg/transform_stamped.hpp"
 #include <tf2_geometry_msgs/tf2_geometry_msgs.h>
 #include <utils.hpp>
@@ -12,7 +12,7 @@ using namespace std::chrono_literals;
 
 
 
-void Broadcaster::broadcast_timer_cb_()
+void MyRobotNode::broadcast_timer_cb_()
 {
     geometry_msgs::msg::TransformStamped dynamic_transform_stamped;
 
@@ -34,7 +34,7 @@ void Broadcaster::broadcast_timer_cb_()
     tf_broadcaster_->sendTransform(dynamic_transform_stamped);
 }
 
-void Broadcaster::listen_transform(const std::string &source_frame, const std::string &target_frame)
+void MyRobotNode::listen_transform(const std::string &source_frame, const std::string &target_frame)
 {
     geometry_msgs::msg::TransformStamped t_stamped;
     geometry_msgs::msg::Pose pose_out;
@@ -62,7 +62,7 @@ void Broadcaster::listen_transform(const std::string &source_frame, const std::s
                                                         << "qz: " << pose_out.orientation.z << "\t"
                                                         << "qw: " << pose_out.orientation.w << "\n");
 }
-void Broadcaster::listen_timer_cb_()
+void MyRobotNode::listen_timer_cb_()
 {
     listen_transform("odom", "aruco_mark");
 }
@@ -70,7 +70,7 @@ void Broadcaster::listen_timer_cb_()
 
 int main(int argc, char** argv) {
   rclcpp::init(argc, argv);
-  auto node = std::make_shared<Broadcaster>("broadcaster");
+  auto node = std::make_shared<MyRobotNode>("my_robot_node");
   rclcpp::spin(node);
   rclcpp::shutdown();
 }

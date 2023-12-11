@@ -181,17 +181,17 @@ listener/fast:
 .PHONY : listener/fast
 
 #=============================================================================
-# Target rules for targets named broadcaster
+# Target rules for targets named my_robot_node
 
 # Build rule for target.
-broadcaster: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 broadcaster
-.PHONY : broadcaster
+my_robot_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_robot_node
+.PHONY : my_robot_node
 
 # fast build rule for target.
-broadcaster/fast:
-	$(MAKE) -f CMakeFiles/broadcaster.dir/build.make CMakeFiles/broadcaster.dir/build
-.PHONY : broadcaster/fast
+my_robot_node/fast:
+	$(MAKE) -f CMakeFiles/my_robot_node.dir/build.make CMakeFiles/my_robot_node.dir/build
+.PHONY : my_robot_node/fast
 
 #=============================================================================
 # Target rules for targets named group17_uninstall
@@ -218,33 +218,6 @@ uninstall: cmake_check_build_system
 uninstall/fast:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
-
-src/broadcaster.o: src/broadcaster.cpp.o
-
-.PHONY : src/broadcaster.o
-
-# target to build an object file
-src/broadcaster.cpp.o:
-	$(MAKE) -f CMakeFiles/broadcaster.dir/build.make CMakeFiles/broadcaster.dir/src/broadcaster.cpp.o
-.PHONY : src/broadcaster.cpp.o
-
-src/broadcaster.i: src/broadcaster.cpp.i
-
-.PHONY : src/broadcaster.i
-
-# target to preprocess a source file
-src/broadcaster.cpp.i:
-	$(MAKE) -f CMakeFiles/broadcaster.dir/build.make CMakeFiles/broadcaster.dir/src/broadcaster.cpp.i
-.PHONY : src/broadcaster.cpp.i
-
-src/broadcaster.s: src/broadcaster.cpp.s
-
-.PHONY : src/broadcaster.s
-
-# target to generate assembly for a file
-src/broadcaster.cpp.s:
-	$(MAKE) -f CMakeFiles/broadcaster.dir/build.make CMakeFiles/broadcaster.dir/src/broadcaster.cpp.s
-.PHONY : src/broadcaster.cpp.s
 
 src/listener.o: src/listener.cpp.o
 
@@ -273,6 +246,33 @@ src/listener.cpp.s:
 	$(MAKE) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/listener.cpp.s
 .PHONY : src/listener.cpp.s
 
+src/my_robot_node.o: src/my_robot_node.cpp.o
+
+.PHONY : src/my_robot_node.o
+
+# target to build an object file
+src/my_robot_node.cpp.o:
+	$(MAKE) -f CMakeFiles/my_robot_node.dir/build.make CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o
+.PHONY : src/my_robot_node.cpp.o
+
+src/my_robot_node.i: src/my_robot_node.cpp.i
+
+.PHONY : src/my_robot_node.i
+
+# target to preprocess a source file
+src/my_robot_node.cpp.i:
+	$(MAKE) -f CMakeFiles/my_robot_node.dir/build.make CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.i
+.PHONY : src/my_robot_node.cpp.i
+
+src/my_robot_node.s: src/my_robot_node.cpp.s
+
+.PHONY : src/my_robot_node.s
+
+# target to generate assembly for a file
+src/my_robot_node.cpp.s:
+	$(MAKE) -f CMakeFiles/my_robot_node.dir/build.make CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.s
+.PHONY : src/my_robot_node.cpp.s
+
 src/utils.o: src/utils.cpp.o
 
 .PHONY : src/utils.o
@@ -280,7 +280,7 @@ src/utils.o: src/utils.cpp.o
 # target to build an object file
 src/utils.cpp.o:
 	$(MAKE) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/utils.cpp.o
-	$(MAKE) -f CMakeFiles/broadcaster.dir/build.make CMakeFiles/broadcaster.dir/src/utils.cpp.o
+	$(MAKE) -f CMakeFiles/my_robot_node.dir/build.make CMakeFiles/my_robot_node.dir/src/utils.cpp.o
 .PHONY : src/utils.cpp.o
 
 src/utils.i: src/utils.cpp.i
@@ -290,7 +290,7 @@ src/utils.i: src/utils.cpp.i
 # target to preprocess a source file
 src/utils.cpp.i:
 	$(MAKE) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/utils.cpp.i
-	$(MAKE) -f CMakeFiles/broadcaster.dir/build.make CMakeFiles/broadcaster.dir/src/utils.cpp.i
+	$(MAKE) -f CMakeFiles/my_robot_node.dir/build.make CMakeFiles/my_robot_node.dir/src/utils.cpp.i
 .PHONY : src/utils.cpp.i
 
 src/utils.s: src/utils.cpp.s
@@ -300,7 +300,7 @@ src/utils.s: src/utils.cpp.s
 # target to generate assembly for a file
 src/utils.cpp.s:
 	$(MAKE) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/utils.cpp.s
-	$(MAKE) -f CMakeFiles/broadcaster.dir/build.make CMakeFiles/broadcaster.dir/src/utils.cpp.s
+	$(MAKE) -f CMakeFiles/my_robot_node.dir/build.make CMakeFiles/my_robot_node.dir/src/utils.cpp.s
 .PHONY : src/utils.cpp.s
 
 # Help Target
@@ -316,16 +316,16 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... listener"
-	@echo "... broadcaster"
+	@echo "... my_robot_node"
 	@echo "... install/strip"
 	@echo "... group17_uninstall"
 	@echo "... uninstall"
-	@echo "... src/broadcaster.o"
-	@echo "... src/broadcaster.i"
-	@echo "... src/broadcaster.s"
 	@echo "... src/listener.o"
 	@echo "... src/listener.i"
 	@echo "... src/listener.s"
+	@echo "... src/my_robot_node.o"
+	@echo "... src/my_robot_node.i"
+	@echo "... src/my_robot_node.s"
 	@echo "... src/utils.o"
 	@echo "... src/utils.i"
 	@echo "... src/utils.s"

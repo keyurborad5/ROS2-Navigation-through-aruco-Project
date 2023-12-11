@@ -12,10 +12,10 @@
 #include <tf2_ros/buffer.h>
 using namespace std::chrono_literals;
 
-class Broadcaster : public rclcpp::Node
+class MyRobotNode : public rclcpp::Node
 {
 public:
-    Broadcaster(std::string node_name) : Node(node_name)
+    MyRobotNode(std::string node_name) : Node(node_name)
     {
         // parameter to decide whether to execute the broadcaster or not
         RCLCPP_INFO(this->get_logger(), "Broadcaster demo started");
@@ -35,12 +35,12 @@ public:
         // timer to publish the transform
         broadcast_timer_ = this->create_wall_timer(
             100ms,
-            std::bind(&Broadcaster::broadcast_timer_cb_, this));
+            std::bind(&MyRobotNode::broadcast_timer_cb_, this));
 
         // timer to publish the transform
         // static_broadcast_timer_ = this->create_wall_timer(
         //     10s,
-        //     std::bind(&Broadcaster::static_broadcast_timer_cb_, this));
+        //     std::bind(&MyRobotNode::static_broadcast_timer_cb_, this));
 
         //************************Listener******************************
         RCLCPP_INFO(this->get_logger(), "Listener demo started");
@@ -53,7 +53,7 @@ public:
             std::make_shared<tf2_ros::TransformListener>(*tf_listener_buffer_);
 
         // timer to listen to the transforms
-        listen_timer_ = this->create_wall_timer(1s, std::bind(&Broadcaster::listen_timer_cb_, this));
+        listen_timer_ = this->create_wall_timer(1s, std::bind(&MyRobotNode::listen_timer_cb_, this));
 
     }
 
@@ -65,7 +65,7 @@ private:
     std::shared_ptr<tf2_ros::Buffer> tf_buffer_;
     /*!< Static broadcaster object */
     std::shared_ptr<tf2_ros::StaticTransformBroadcaster> tf_static_broadcaster_;
-    /*!< Broadcaster object */
+    /*!< MyRobotNode object */
     std::shared_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
     /*!< Utils object to access utility functions*/
     std::shared_ptr<Utils> utils_ptr_;

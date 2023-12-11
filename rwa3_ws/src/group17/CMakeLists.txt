@@ -30,10 +30,10 @@ endif()
 include_directories(include/group17)
 
 
-add_executable(broadcaster src/broadcaster.cpp src/utils.cpp)
-ament_target_dependencies(broadcaster ament_cmake rclcpp mage_msgs geometry_msgs std_msgs tf2_ros tf2 tf2_geometry_msgs)
+add_executable(my_robot_node src/my_robot_node.cpp src/utils.cpp)
+ament_target_dependencies(my_robot_node ament_cmake rclcpp mage_msgs geometry_msgs std_msgs tf2_ros tf2 tf2_geometry_msgs)
 
-install(TARGETS broadcaster
+install(TARGETS my_robot_node
   RUNTIME DESTINATION lib/${PROJECT_NAME}
 )
 
@@ -45,7 +45,7 @@ install(TARGETS listener
 )
 
 install(TARGETS
-broadcaster
+my_robot_node
 listener
 DESTINATION lib/${PROJECT_NAME}
 )
