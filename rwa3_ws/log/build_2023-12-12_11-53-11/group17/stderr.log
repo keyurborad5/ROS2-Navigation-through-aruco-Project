@@ -1,0 +1,9 @@
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:[m[K In member function ‘[01m[Kvoid MyRobotNode::cmd_val_pub_cb()[m[K’:
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:198:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kkp[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  198 |   double [01;35m[Kkp[m[K= 0.5;
+      |          [01;35m[K^~[m[K
+
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:199:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktarget_rad[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  199 | [01;35m[Karget_rad[m[K = -90*M_PI/180;
+      | [01;35m[K~~~~~~~~~[m[K
+

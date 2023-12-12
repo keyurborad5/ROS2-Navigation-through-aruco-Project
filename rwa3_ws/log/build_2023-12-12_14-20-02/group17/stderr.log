@@ -1,0 +1,5 @@
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:[m[K In member function ‘[01m[Kvoid MyRobotNode::cmd_val_pub_cb()[m[K’:
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:234:40:[m[K [01;35m[Kwarning: [m[K‘[01m[Ktarget_rad[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+  234 | [01;35m[Krrent_yaw_)[m[K;
+      | [01;35m[K~~~~~~~~~~~[m[K
+

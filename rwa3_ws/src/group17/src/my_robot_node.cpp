@@ -33,7 +33,7 @@ void MyRobotNode::aruco_broadcaster(ros2_aruco_interfaces::msg::ArucoMarkers::Sh
     aruco_dynamic_transform_stamped.transform.rotation.w = msg->poses[0].orientation.w;
     // Send the transform
     aruco_tf_broadcaster_->sendTransform(aruco_dynamic_transform_stamped);
-    RCLCPP_INFO_STREAM(this->get_logger(), "Aruco Broadcasting_dynamic_frame : "<<msg->poses[0].position.x);
+    // RCLCPP_INFO_STREAM(this->get_logger(), "Aruco Broadcasting_dynamic_frame : "<<msg->poses[0].position.x);
 }
 void MyRobotNode::part_broadcaster(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr msg)
 {
@@ -59,7 +59,7 @@ void MyRobotNode::part_broadcaster(mage_msgs::msg::AdvancedLogicalCameraImage::S
     part_dynamic_transform_stamped.transform.rotation.w = msg->part_poses[0].pose.orientation.w;
     // Send the transform
     part_tf_broadcaster_->sendTransform(part_dynamic_transform_stamped);
-    RCLCPP_INFO_STREAM(this->get_logger(), "PART advance cam Broadcasting_dynamic_frame : "<<msg->part_poses[0].pose.position.x;);
+    // RCLCPP_INFO_STREAM(this->get_logger(), "PART advance cam Broadcasting_dynamic_frame : "<<msg->part_poses[0].pose.position.x;);
 }
 
 void MyRobotNode::aruco_listen_transform(const std::string &source_frame, const std::string &target_frame)
@@ -155,9 +155,10 @@ void MyRobotNode::part_listen_transform(const std::string &source_frame, const s
 
 void MyRobotNode::aruco_cam_sub_cb(ros2_aruco_interfaces::msg::ArucoMarkers::SharedPtr msg){
     
-    RCLCPP_INFO_STREAM(this->get_logger(),"Aruco marker callback ");
+    // RCLCPP_INFO_STREAM(this->get_logger(),"Aruco marker callback ");
     
     aruco_broadcaster(msg);
+    marker_id_=msg->marker_ids[0];
 
     aruco_listen_transform("odom", "aruco_mark");  
     base_link_listen_transform("odom", "base_link");   
@@ -168,25 +169,96 @@ void MyRobotNode::part_cam_sub_cb(mage_msgs::msg::AdvancedLogicalCameraImage::Sh
     if(msg){
     RCLCPP_INFO_STREAM(this->get_logger(),"Part Advance Camera callback : ");
 
-    // RCLCPP_INFO_STREAM(this->get_logger(),"Part Advance Camera callback ");
+   
     
     part_broadcaster(msg);
 
     part_listen_transform("odom", "logical_camera_link");   
     }
 }
+
+void MyRobotNode::odom_sub_cb(nav_msgs::msg::Odometry::SharedPtr msg){
+    tf2::Quaternion q( 
+        msg->pose.pose.orientation.x,
+        msg->pose.pose.orientation.y,
+        msg->pose.pose.orientation.z,
+        msg->pose.pose.orientation.w);
+    std::array<double, 3> euler = utils_ptr_->set_euler_from_quaternion(q);
+    //RCLCPP_INFO_STREAM(this->get_logger(), "Euler angles : "<< euler[0]<<","<<euler[1]<<","<<euler[2]<<"\n");
+    current_yaw_=euler[2];
+
+
+
+
+}
+
+double MyRobotNode::convertToMinusPiToPi(double radians) {
+    // Ensure that radians is between -2*pi and 2*pi
+    radians = fmod(radians, 2 * M_PI);
+
+    // Map the angle to the range (-pi, pi]
+    if (radians <= -M_PI) {
+        radians += 2 * M_PI;
+    } else if (radians > M_PI) {
+        radians -= 2 * M_PI;
+    }
+
+    return radians;
+}
+
+
+
 void MyRobotNode::cmd_val_pub_cb(){
-    geometry_msgs::msg::Twist task;
+    geometry_msgs::msg::Twist linear;
     double dist=MyRobotNode::distance(aruco_x_pos_,aruco_y_pos_,base_link_x_pos_,base_link_y_pos_);
-    if(dist>=1){
-        task.linear.x = 0.1;
+    double kp= 0.5;
+    
+    double rotate_rad;
+
+    switch (marker_id_)
+    {
+    case 0:
+        rotate_rad = -90*M_PI/180;
+        break;
+    case 1:
+        rotate_rad = 90*M_PI/180;
+        break;
+    case 2:
+        rotate_rad = 0*M_PI/180;
+        break;
+    
+    default:
+        break;
+    }
+
+
+
+    if(dist>=1.0 && flag1_==true){
+        
+        linear.angular.z=0.0;
+        linear.linear.x = 0.1;
+        RCLCPP_INFO_STREAM(this->get_logger(),"Going_forward by 0.1m/s, dist: "<< dist);
+        target_rad_=current_yaw_+rotate_rad;
+        target_rad_=convertToMinusPiToPi(target_rad_);
+
+
+
+        
     }
     else{
-        task.linear.x = 0.0;
+         linear.linear.x = 0.0;
+         RCLCPP_INFO_STREAM(this->get_logger(),"Stopped ,, dist: "<< dist);
+        flag1_=false;
+        linear.angular.z=kp*(target_rad_-current_yaw_);
+        cmd_val_publisher_->publish(linear);
+        RCLCPP_INFO_STREAM(this->get_logger(),"NOWW TURNING, : "<< current_yaw_);
+        if(abs(target_rad_-current_yaw_)<0.01){flag1_=true;}
+        
+        
     }
     
-    cmd_val_publisher_->publish(task);
-    RCLCPP_INFO_STREAM(this->get_logger(),"Going_forward by 0.1m/s, dist: "<< dist);
+    
+    cmd_val_publisher_->publish(linear);
 }
    
 double MyRobotNode::distance(double x1,double y1,double x2, double y2){

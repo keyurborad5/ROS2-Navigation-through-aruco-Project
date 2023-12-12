@@ -1,0 +1,10 @@
+[35m[1mScanning dependencies of target my_robot_node[0m
+[ 50%] Built target listener
+[ 66%] [32mBuilding CXX object CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o[0m
+[ 83%] [32m[1mLinking CXX executable my_robot_node[0m
+/usr/bin/ld: CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o: in function `MyRobotNode::MyRobotNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)':
+my_robot_node.cpp:(.text._ZN11MyRobotNodeC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN11MyRobotNodeC5ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x987): undefined reference to `MyRobotNode::odom_sub_cb(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >)'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/my_robot_node.dir/build.make:197: my_robot_node] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/my_robot_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

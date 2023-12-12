@@ -98,11 +98,16 @@ my_robot_node: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/instal
 my_robot_node: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib/libmage_msgs__rosidl_typesupport_c.so
 my_robot_node: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib/libmage_msgs__rosidl_typesupport_introspection_cpp.so
 my_robot_node: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib/libmage_msgs__rosidl_typesupport_cpp.so
+my_robot_node: /opt/ros/galactic/lib/libnav_msgs__rosidl_typesupport_introspection_c.so
+my_robot_node: /opt/ros/galactic/lib/libnav_msgs__rosidl_typesupport_c.so
+my_robot_node: /opt/ros/galactic/lib/libnav_msgs__rosidl_typesupport_introspection_cpp.so
+my_robot_node: /opt/ros/galactic/lib/libnav_msgs__rosidl_typesupport_cpp.so
 my_robot_node: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_introspection_c.so
 my_robot_node: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_c.so
 my_robot_node: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_introspection_cpp.so
 my_robot_node: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_cpp.so
 my_robot_node: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib/libmage_msgs__rosidl_generator_c.so
+my_robot_node: /opt/ros/galactic/lib/libnav_msgs__rosidl_generator_c.so
 my_robot_node: /opt/ros/galactic/lib/libstatic_transform_broadcaster_node.so
 my_robot_node: /opt/ros/galactic/lib/libtf2_ros.so
 my_robot_node: /opt/ros/galactic/lib/libmessage_filters.so

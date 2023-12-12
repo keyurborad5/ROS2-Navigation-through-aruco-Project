@@ -5,6 +5,7 @@
 #include <utils.hpp>
 #include <geometry_msgs/msg/pose.hpp>
 #include <geometry_msgs/msg/twist.hpp>
+#include<nav_msgs/msg/odometry.hpp>
 // for static broadcaster
 #include "tf2_ros/static_transform_broadcaster.h"
 // for dynamic broadcaster
@@ -18,10 +19,23 @@ using namespace std::chrono_literals;
 class MyRobotNode : public rclcpp::Node
 {
 public:
+    
     MyRobotNode(std::string node_name) : Node(node_name)
     {
         // parameter to decide whether to execute the broadcaster or not
         // RCLCPP_INFO(this->get_logger(), "Broadcaster demo started");
+
+        //declaring node parameter
+        this->declare_parameter("aruco_marker_0", "right_90");
+        this->declare_parameter("aruco_marker_1","left_90");
+        this->declare_parameter("aruco_marker_2","end");
+        
+
+        //Retriving node parameter by making them as attribute
+        aruco_marker_0_=this->get_parameter("aruco_marker_0").as_string();
+        aruco_marker_1_=this->get_parameter("aruco_marker_1").as_string();
+        aruco_marker_2_=this->get_parameter("aruco_marker_2").as_string();
+        
 
         // initialize the transform broadcaster
         aruco_tf_broadcaster_ = std::make_shared<tf2_ros::TransformBroadcaster>(this);
@@ -57,16 +71,25 @@ public:
         //********************Subscriber**************************
         aruco_cam_subscriber_=this->create_subscription<ros2_aruco_interfaces::msg::ArucoMarkers>("aruco_markers",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::aruco_cam_sub_cb,this,std::placeholders::_1));
         // part_cam_subscriber_=this->create_subscription<mage_msgs::msg::AdvancedLogicalCameraImage>("mage/advanced_logical_camera/image",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::part_cam_sub_cb,this,std::placeholders::_1));
+        
+        odom_subscriber_=this->create_subscription<nav_msgs::msg::Odometry>("odom",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::odom_sub_cb,this,std::placeholders::_1));
 
         //********************Publisher*****************************
         cmd_val_publisher_=this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel",10);
-        cmd_val_timer_ = this->create_wall_timer(std::chrono::milliseconds(100),std::bind(&MyRobotNode::cmd_val_pub_cb,this));
 
+        std::this_thread::sleep_for(std::chrono::seconds(5));
+
+        cmd_val_timer_ = this->create_wall_timer(std::chrono::milliseconds(100),std::bind(&MyRobotNode::cmd_val_pub_cb,this));
+        
 
     }
 
 
 private:
+
+    std::string aruco_marker_0_;
+    std::string aruco_marker_1_;
+    std::string aruco_marker_2_;
     /*!< Boolean parameter to whether or not start the broadcaster */
     bool param_broadcast_;
     /*!< Buffer that stores several seconds of transforms for easy lookup by the listener. */
@@ -81,6 +104,8 @@ private:
     std::shared_ptr<Utils> utils_ptr_;
     int part_color_;
     int part_type_;
+    int marker_id_;
+    double target_rad_ =current_yaw_;
     
     
 
@@ -112,6 +137,8 @@ private:
     double aruco_y_pos_;
     double base_link_x_pos_;
     double base_link_y_pos_;
+    double current_yaw_;
+    bool flag1_=true;
     
     /**
      * @brief Listen to a aruco transform
@@ -149,14 +176,18 @@ private:
     rclcpp::Subscription<mage_msgs::msg::AdvancedLogicalCameraImage>::SharedPtr part_cam_subscriber_;
     void part_cam_sub_cb(const mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr msg);
 
+    rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_subscriber_;
+    void odom_sub_cb(nav_msgs::msg::Odometry::SharedPtr msg);
     //*******************Publisher**********************
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_val_publisher_;
+    
     rclcpp::TimerBase::SharedPtr cmd_val_timer_;
     void cmd_val_pub_cb();
+    
 
     //************************Calculating Distance****************************
     double distance(double x1,double y1,double x2, double y2);
-
+    double convertToMinusPiToPi(double radians);
 
    
 };
