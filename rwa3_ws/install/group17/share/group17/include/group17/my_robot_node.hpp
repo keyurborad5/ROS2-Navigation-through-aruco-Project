@@ -21,7 +21,7 @@ public:
     MyRobotNode(std::string node_name) : Node(node_name)
     {
         // parameter to decide whether to execute the broadcaster or not
-        RCLCPP_INFO(this->get_logger(), "Broadcaster demo started");
+        // RCLCPP_INFO(this->get_logger(), "Broadcaster demo started");
 
         // initialize the transform broadcaster
         aruco_tf_broadcaster_ = std::make_shared<tf2_ros::TransformBroadcaster>(this);
@@ -37,12 +37,16 @@ public:
 
         
         //************************Listener******************************
-        RCLCPP_INFO(this->get_logger(), "Listener demo started");
+        // RCLCPP_INFO(this->get_logger(), "Listener demo started");
 
         // load a buffer of transforms
         aruco_tf_listener_buffer_ =std::make_unique<tf2_ros::Buffer>(this->get_clock());
         aruco_tf_listener_buffer_->setUsingDedicatedThread(true);
         aruco_transform_listener_ =std::make_shared<tf2_ros::TransformListener>(*aruco_tf_listener_buffer_);
+
+        base_link_tf_listener_buffer_ =std::make_unique<tf2_ros::Buffer>(this->get_clock());
+        base_link_tf_listener_buffer_->setUsingDedicatedThread(true);
+        base_link_transform_listener_ =std::make_shared<tf2_ros::TransformListener>(*base_link_tf_listener_buffer_);
 
         part_tf_listener_buffer_ =std::make_unique<tf2_ros::Buffer>(this->get_clock());
         part_tf_listener_buffer_->setUsingDedicatedThread(true);
@@ -51,8 +55,8 @@ public:
 
 
         //********************Subscriber**************************
-        // aruco_cam_subscriber_=this->create_subscription<ros2_aruco_interfaces::msg::ArucoMarkers>("aruco_markers",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::aruco_cam_sub_cb,this,std::placeholders::_1));
-        part_cam_subscriber_=this->create_subscription<mage_msgs::msg::AdvancedLogicalCameraImage>("mage/advanced_logical_camera/image",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::part_cam_sub_cb,this,std::placeholders::_1));
+        aruco_cam_subscriber_=this->create_subscription<ros2_aruco_interfaces::msg::ArucoMarkers>("aruco_markers",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::aruco_cam_sub_cb,this,std::placeholders::_1));
+        // part_cam_subscriber_=this->create_subscription<mage_msgs::msg::AdvancedLogicalCameraImage>("mage/advanced_logical_camera/image",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::part_cam_sub_cb,this,std::placeholders::_1));
 
         //********************Publisher*****************************
         cmd_val_publisher_=this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel",10);
@@ -99,10 +103,15 @@ private:
     bool param_listen_;
     /*!< Buffer that stores several seconds of transforms for easy lookup by the listener. */
     std::unique_ptr<tf2_ros::Buffer> aruco_tf_listener_buffer_;
+    std::unique_ptr<tf2_ros::Buffer> base_link_tf_listener_buffer_;
     /*!< Transform listener object */
     std::shared_ptr<tf2_ros::TransformListener> aruco_transform_listener_{nullptr};
+    std::shared_ptr<tf2_ros::TransformListener> base_link_transform_listener_{nullptr};
+
     double aruco_x_pos_;
-    double aurco_y_pos_;
+    double aruco_y_pos_;
+    double base_link_x_pos_;
+    double base_link_y_pos_;
     
     /**
      * @brief Listen to a aruco transform
@@ -111,6 +120,13 @@ private:
      * @param target_frame Target frame (parent frame) of the transform
      */
     void aruco_listen_transform(const std::string &source_frame, const std::string &target_frame);
+     /**
+     * @brief Listen to a base transform
+     *
+     * @param source_frame Source frame (child frame) of the transform
+     * @param target_frame Target frame (parent frame) of the transform
+     */
+    void base_link_listen_transform(const std::string &source_frame, const std::string &target_frame);
 
     /*!< Buffer that stores several seconds of transforms for easy lookup by the listener. */
     std::unique_ptr<tf2_ros::Buffer> part_tf_listener_buffer_;
@@ -137,6 +153,9 @@ private:
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_val_publisher_;
     rclcpp::TimerBase::SharedPtr cmd_val_timer_;
     void cmd_val_pub_cb();
+
+    //************************Calculating Distance****************************
+    double distance(double x1,double y1,double x2, double y2);
 
 
    

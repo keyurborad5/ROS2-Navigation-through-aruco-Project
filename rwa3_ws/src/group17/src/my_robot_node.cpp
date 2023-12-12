@@ -80,7 +80,39 @@ void MyRobotNode::aruco_listen_transform(const std::string &source_frame, const 
     pose_out.position.y = t_stamped.transform.translation.y;
     pose_out.position.z = t_stamped.transform.translation.z;
     pose_out.orientation = t_stamped.transform.rotation;
-    // int x = t_stamped.transform.translation.x;
+    aruco_x_pos_ = t_stamped.transform.translation.x;
+    aruco_y_pos_ = t_stamped.transform.translation.y;
+
+    // RCLCPP_INFO_STREAM(this->get_logger(), target_frame << " in " << source_frame << ":\n"
+    //                                                     << "x: " << pose_out.position.x << "\t"
+    //                                                     << "y: " << pose_out.position.y << "\t"
+    //                                                     << "z: " << pose_out.position.z << "\n"
+    //                                                     << "qx: " << pose_out.orientation.x << "\t"
+    //                                                     << "qy: " << pose_out.orientation.y << "\t"
+    //                                                     << "qz: " << pose_out.orientation.z << "\t"
+    //                                                     << "qw: " << pose_out.orientation.w << "\n");
+}
+void MyRobotNode::base_link_listen_transform(const std::string &source_frame, const std::string &target_frame)
+{
+    geometry_msgs::msg::TransformStamped t_stamped;
+    geometry_msgs::msg::Pose pose_out;
+    try
+    {
+        t_stamped = base_link_tf_listener_buffer_->lookupTransform(source_frame, target_frame, tf2::TimePointZero, 50ms);
+    }
+    catch (const tf2::TransformException &ex)
+    {
+        RCLCPP_ERROR_STREAM(this->get_logger(), "Could not get transform between " << source_frame << " and " << target_frame << ": " << ex.what());
+        return;
+    }
+
+    pose_out.position.x = t_stamped.transform.translation.x;
+    pose_out.position.y = t_stamped.transform.translation.y;
+    pose_out.position.z = t_stamped.transform.translation.z;
+    pose_out.orientation = t_stamped.transform.rotation;
+    base_link_x_pos_ = t_stamped.transform.translation.x;
+    base_link_y_pos_ = t_stamped.transform.translation.y;
+
 
     // RCLCPP_INFO_STREAM(this->get_logger(), target_frame << " in " << source_frame << ":\n"
     //                                                     << "x: " << pose_out.position.x << "\t"
@@ -110,14 +142,14 @@ void MyRobotNode::part_listen_transform(const std::string &source_frame, const s
     pose_out.position.z = t_stamped.transform.translation.z;
     pose_out.orientation = t_stamped.transform.rotation;
 
-    RCLCPP_INFO_STREAM(this->get_logger(), target_frame << " in " << source_frame << ":\n"
-                                                        << "x: " << pose_out.position.x << "\t"
-                                                        << "y: " << pose_out.position.y << "\t"
-                                                        << "z: " << pose_out.position.z << "\n"
-                                                        << "qx: " << pose_out.orientation.x << "\t"
-                                                        << "qy: " << pose_out.orientation.y << "\t"
-                                                        << "qz: " << pose_out.orientation.z << "\t"
-                                                        << "qw: " << pose_out.orientation.w << "\n");
+    // RCLCPP_INFO_STREAM(this->get_logger(), target_frame << " in " << source_frame << ":\n"
+    //                                                     << "x: " << pose_out.position.x << "\t"
+    //                                                     << "y: " << pose_out.position.y << "\t"
+    //                                                     << "z: " << pose_out.position.z << "\n"
+    //                                                     << "qx: " << pose_out.orientation.x << "\t"
+    //                                                     << "qy: " << pose_out.orientation.y << "\t"
+    //                                                     << "qz: " << pose_out.orientation.z << "\t"
+    //                                                     << "qw: " << pose_out.orientation.w << "\n");
 }
 
 
@@ -127,7 +159,8 @@ void MyRobotNode::aruco_cam_sub_cb(ros2_aruco_interfaces::msg::ArucoMarkers::Sha
     
     aruco_broadcaster(msg);
 
-    aruco_listen_transform("odom", "aruco_mark");   
+    aruco_listen_transform("odom", "aruco_mark");  
+    base_link_listen_transform("odom", "base_link");   
 
 }
 void MyRobotNode::part_cam_sub_cb(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr msg){
@@ -144,10 +177,22 @@ void MyRobotNode::part_cam_sub_cb(mage_msgs::msg::AdvancedLogicalCameraImage::Sh
 }
 void MyRobotNode::cmd_val_pub_cb(){
     geometry_msgs::msg::Twist task;
-    task.linear.x = 0.1;
+    double dist=MyRobotNode::distance(aruco_x_pos_,aruco_y_pos_,base_link_x_pos_,base_link_y_pos_);
+    if(dist>=1){
+        task.linear.x = 0.1;
+    }
+    else{
+        task.linear.x = 0.0;
+    }
+    
     cmd_val_publisher_->publish(task);
-    RCLCPP_INFO_STREAM(this->get_logger(),"Going_forward by 0.1");
+    RCLCPP_INFO_STREAM(this->get_logger(),"Going_forward by 0.1m/s, dist: "<< dist);
 }
+   
+double MyRobotNode::distance(double x1,double y1,double x2, double y2){
+    return sqrt(pow(x1-x2,2)+pow(y1-y2,2));
+}
+
 
 int main(int argc, char** argv) {
   rclcpp::init(argc, argv);
