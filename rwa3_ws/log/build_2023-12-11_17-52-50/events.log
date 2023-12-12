@@ -1,0 +1,259 @@
+[0.000000] (-) TimerEvent: {}
+[0.000149] (-) JobUnselected: {'identifier': 'mage_msgs'}
+[0.000184] (-) JobUnselected: {'identifier': 'ros2_aruco'}
+[0.000207] (-) JobUnselected: {'identifier': 'ros2_aruco_interfaces'}
+[0.000227] (-) JobUnselected: {'identifier': 'turtlebot3_fake_node'}
+[0.000246] (-) JobUnselected: {'identifier': 'turtlebot3_gazebo'}
+[0.000264] (-) JobUnselected: {'identifier': 'turtlebot3_sensors'}
+[0.000282] (-) JobUnselected: {'identifier': 'turtlebot3_simulations'}
+[0.000302] (group17) JobQueued: {'identifier': 'group17', 'dependencies': OrderedDict([('mage_msgs', '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs'), ('ros2_aruco_interfaces', '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces'), ('turtlebot3_fake_node', '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node'), ('turtlebot3_gazebo', '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo'), ('turtlebot3_simulations', '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_simulations')])}
+[0.000340] (group17) JobStarted: {'identifier': 'group17'}
+[0.099869] (-) TimerEvent: {}
+[0.201305] (-) TimerEvent: {}
+[0.301759] (-) TimerEvent: {}
+[0.357011] (group17) JobProgress: {'identifier': 'group17', 'progress': 'cmake'}
+[0.358249] (group17) JobProgress: {'identifier': 'group17', 'progress': 'build'}
+[0.359312] (group17) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/group17', '--', '-j8', '-l8'], 'cwd': '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/group17', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'keyur'), ('SSH_AGENT_PID', '1490'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors/lib:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/keyur'), ('OLDPWD', '/home/keyur'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1129'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4681'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install:/home/keyur/ros809_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'keyur'), ('JOURNAL_STREAM', '8:37754'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'keyur'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/keyur:@/tmp/.ICE-unix/1528,unix/keyur:/tmp/.ICE-unix/1528'), ('INVOCATION_ID', 'ecb9378ecee64ada87dcaaaf5cc873ad'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_simulations:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/group17:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/my_first_package:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs:/home/keyur/ros809_ws/install/first_package:/home/keyur/ros809_ws/install/automated_vehicle:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:24535dfb-5ba9-417f-92d1-3870642c0bd4'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/group17'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_simulations:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/group17:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/my_first_package:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs:/home/keyur/ros809_ws/install/first_package:/home/keyur/ros809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic')]), 'shell': False}
+[0.401957] (-) TimerEvent: {}
+[0.502418] (-) TimerEvent: {}
+[0.602779] (-) TimerEvent: {}
+[0.703238] (-) TimerEvent: {}
+[0.803927] (-) TimerEvent: {}
+[0.904587] (-) TimerEvent: {}
+[1.005256] (-) TimerEvent: {}
+[1.105580] (-) TimerEvent: {}
+[1.206159] (-) TimerEvent: {}
+[1.307358] (-) TimerEvent: {}
+[1.408709] (-) TimerEvent: {}
+[1.509489] (-) TimerEvent: {}
+[1.610276] (-) TimerEvent: {}
+[1.676680] (group17) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[1.710536] (-) TimerEvent: {}
+[1.775222] (group17) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.810644] (-) TimerEvent: {}
+[1.911120] (-) TimerEvent: {}
+[2.011616] (-) TimerEvent: {}
+[2.076177] (group17) StdoutLine: {'line': b'-- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)\n'}
+[2.111893] (-) TimerEvent: {}
+[2.212596] (-) TimerEvent: {}
+[2.313459] (-) TimerEvent: {}
+[2.348857] (group17) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.385072] (group17) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[2.413681] (-) TimerEvent: {}
+[2.514197] (-) TimerEvent: {}
+[2.614526] (-) TimerEvent: {}
+[2.714835] (-) TimerEvent: {}
+[2.754879] (group17) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.814974] (-) TimerEvent: {}
+[2.868303] (group17) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[2.885358] (group17) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[2.915161] (-) TimerEvent: {}
+[2.956022] (group17) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[3.015441] (-) TimerEvent: {}
+[3.116172] (-) TimerEvent: {}
+[3.216756] (-) TimerEvent: {}
+[3.267322] (group17) StdoutLine: {'line': b'-- Found mage_msgs: 0.0.0 (/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/share/mage_msgs/cmake)\n'}
+[3.316873] (-) TimerEvent: {}
+[3.417221] (-) TimerEvent: {}
+[3.423683] (group17) StdoutLine: {'line': b'-- Found tf2_ros: 0.17.5 (/opt/ros/galactic/share/tf2_ros/cmake)\n'}
+[3.517427] (-) TimerEvent: {}
+[3.617990] (-) TimerEvent: {}
+[3.718308] (-) TimerEvent: {}
+[3.818626] (-) TimerEvent: {}
+[3.918948] (-) TimerEvent: {}
+[4.019269] (-) TimerEvent: {}
+[4.119649] (-) TimerEvent: {}
+[4.149621] (group17) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.17.5 (/opt/ros/galactic/share/tf2_geometry_msgs/cmake)\n'}
+[4.179451] (group17) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/galactic/share/eigen3_cmake_module/cmake)\n'}
+[4.219806] (-) TimerEvent: {}
+[4.239349] (group17) StdoutLine: {'line': b'-- Found ros2_aruco_interfaces: 0.1.0 (/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake)\n'}
+[4.319811] (group17) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)\n'}
+[4.320017] (-) TimerEvent: {}
+[4.420338] (-) TimerEvent: {}
+[4.520791] (-) TimerEvent: {}
+[4.533812] (group17) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[4.536147] (group17) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.536825] (group17) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17\n'}
+[4.536979] (group17) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.539132] (group17) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[4.539286] (group17) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[4.540844] (group17) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.542854] (group17) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.542986] (group17) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.543660] (group17) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.548834] (group17) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.621007] (-) TimerEvent: {}
+[4.721486] (-) TimerEvent: {}
+[4.744067] (group17) StdoutLine: {'line': b'-- Generating done\n'}
+[4.748543] (group17) StdoutLine: {'line': b'-- Build files have been written to: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/group17\n'}
+[4.804832] (group17) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target my_robot_node\x1b[0m\n'}
+[4.817644] (group17) StdoutLine: {'line': b'[ 50%] Built target listener\n'}
+[4.821596] (-) TimerEvent: {}
+[4.879290] (group17) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o\x1b[0m\n'}
+[4.921744] (-) TimerEvent: {}
+[5.022132] (-) TimerEvent: {}
+[5.123411] (-) TimerEvent: {}
+[5.224320] (-) TimerEvent: {}
+[5.324798] (-) TimerEvent: {}
+[5.425303] (-) TimerEvent: {}
+[5.525761] (-) TimerEvent: {}
+[5.626094] (-) TimerEvent: {}
+[5.726432] (-) TimerEvent: {}
+[5.826818] (-) TimerEvent: {}
+[5.927248] (-) TimerEvent: {}
+[6.027775] (-) TimerEvent: {}
+[6.128706] (-) TimerEvent: {}
+[6.229364] (-) TimerEvent: {}
+[6.336985] (-) TimerEvent: {}
+[6.437509] (-) TimerEvent: {}
+[6.537915] (-) TimerEvent: {}
+[6.638550] (-) TimerEvent: {}
+[6.739970] (-) TimerEvent: {}
+[6.840457] (-) TimerEvent: {}
+[6.940836] (-) TimerEvent: {}
+[7.041223] (-) TimerEvent: {}
+[7.141751] (-) TimerEvent: {}
+[7.242249] (-) TimerEvent: {}
+[7.342684] (-) TimerEvent: {}
+[7.443156] (-) TimerEvent: {}
+[7.543677] (-) TimerEvent: {}
+[7.644216] (-) TimerEvent: {}
+[7.744782] (-) TimerEvent: {}
+[7.845402] (-) TimerEvent: {}
+[7.945804] (-) TimerEvent: {}
+[8.046191] (-) TimerEvent: {}
+[8.123070] (group17) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1\x1b[m\x1b[K:\n'}
+[8.123521] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KMyRobotNode::MyRobotNode(std::string)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.124004] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:46:199:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> >::AdvancedLogicalCameraImage_(const char [35], int, std::_Bind_helper<false, void (MyRobotNode::*)(std::shared_ptr<mage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> > >), MyRobotNode*, const std::_Placeholder<1>&>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.124165] (group17) StderrLine: {'line': b'   46 | ,this,std::placeholders::_1)\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[8.124300] (group17) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[8.124444] (group17) StderrLine: {'line': b'\n'}
+[8.124575] (group17) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/include/mage_msgs/msg/advanced_logical_camera_image.hpp:7\x1b[m\x1b[K,\n'}
+[8.124718] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:14\x1b[m\x1b[K,\n'}
+[8.124854] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1\x1b[m\x1b[K:\n'}
+[8.124991] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/include/mage_msgs/msg/detail/advanced_logical_camera_image__struct.hpp:47:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kmage_msgs::msg::AdvancedLogicalCameraImage_<ContainerAllocator>::AdvancedLogicalCameraImage_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.125150] (group17) StderrLine: {'line': b'   47 |   explicit \x1b[01;36m\x1b[KAdvancedLogicalCameraImage_\x1b[m\x1b[K(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)\n'}
+[8.125327] (group17) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.125470] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/include/mage_msgs/msg/detail/advanced_logical_camera_image__struct.hpp:47:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 3 provided\n'}
+[8.125614] (group17) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/include/mage_msgs/msg/advanced_logical_camera_image.hpp:7\x1b[m\x1b[K,\n'}
+[8.125751] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:14\x1b[m\x1b[K,\n'}
+[8.125908] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1\x1b[m\x1b[K:\n'}
+[8.126055] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/include/mage_msgs/msg/detail/advanced_logical_camera_image__struct.hpp:41:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kmage_msgs::msg::AdvancedLogicalCameraImage_<ContainerAllocator>::AdvancedLogicalCameraImage_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.126221] (group17) StderrLine: {'line': b'   41 |   explicit \x1b[01;36m\x1b[KAdvancedLogicalCameraImage_\x1b[m\x1b[K(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)\n'}
+[8.126372] (group17) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.126535] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/include/mage_msgs/msg/detail/advanced_logical_camera_image__struct.hpp:41:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 3 provided\n'}
+[8.126688] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/include/mage_msgs/msg/detail/advanced_logical_camera_image__struct.hpp:37:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kmage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> >::AdvancedLogicalCameraImage_(const mage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> >&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.126855] (group17) StderrLine: {'line': b'   37 | struct \x1b[01;36m\x1b[KAdvancedLogicalCameraImage_\x1b[m\x1b[K\n'}
+[8.127009] (group17) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.127168] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/include/mage_msgs/msg/detail/advanced_logical_camera_image__struct.hpp:37:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 3 provided\n'}
+[8.127324] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/include/mage_msgs/msg/detail/advanced_logical_camera_image__struct.hpp:37:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kmage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> >::AdvancedLogicalCameraImage_(mage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> >&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.127482] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/include/mage_msgs/msg/detail/advanced_logical_camera_image__struct.hpp:37:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 3 provided\n'}
+[8.127638] (group17) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1\x1b[m\x1b[K:\n'}
+[8.127777] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:46:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[8.127925] (group17) StderrLine: {'line': b'   46 |      part_subscriber_=this->\x1b[01;31m\x1b[Kcreate_subscription<mage_msgs::msg::AdvancedLogicalCameraImage("mage/advanced_logical_camera/image",10, std::bind(&MyRobotNode::part_sub_cb,this,std::placeholders::_1))\x1b[m\x1b[K;\n'}
+[8.128068] (group17) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.128208] (group17) StderrLine: {'line': b'\n'}
+[8.128346] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:46:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Subscription<mage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> > >::SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Subscription<mage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[K<unresolved overloaded function type>\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[8.128514] (group17) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/memory:81\x1b[m\x1b[K,\n'}
+[8.128645] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:154\x1b[m\x1b[K,\n'}
+[8.128786] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/static_transform_broadcaster.h:38\x1b[m\x1b[K,\n'}
+[8.128936] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:4\x1b[m\x1b[K,\n'}
+[8.129091] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1\x1b[m\x1b[K:\n'}
+[8.129270] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:309:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = rclcpp::Subscription<mage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.129434] (group17) StderrLine: {'line': b'  309 |       shared_ptr& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const shared_ptr&) noexcept = default;\n'}
+[8.129579] (group17) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[8.129709] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:309:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[K<unresolved overloaded function type>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<rclcpp::Subscription<mage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> > > >&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.129874] (group17) StderrLine: {'line': b'  309 |       shared_ptr& operator=(\x1b[01;36m\x1b[Kconst shared_ptr&\x1b[m\x1b[K) noexcept = default;\n'}
+[8.130015] (group17) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.130152] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:313:2:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Yp = _Yp; _Tp = rclcpp::Subscription<mage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.130310] (group17) StderrLine: {'line': b'  313 |  \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const shared_ptr<_Yp>& __r) noexcept\n'}
+[8.130462] (group17) StderrLine: {'line': b'      |  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[8.130612] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:313:2:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[8.130763] (group17) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1\x1b[m\x1b[K:\n'}
+[8.130922] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:46:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Yp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.131059] (group17) StderrLine: {'line': b'   46 |      part_subscriber_=this->\x1b[01;36m\x1b[Kcreate_subscription<mage_msgs::msg::AdvancedLogicalCameraImage("mage/advanced_logical_camera/image",10, std::bind(&MyRobotNode::part_sub_cb,this,std::placeholders::_1))\x1b[m\x1b[K;\n'}
+[8.131199] (group17) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.131339] (group17) StderrLine: {'line': b'\n'}
+[8.131481] (group17) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/memory:81\x1b[m\x1b[K,\n'}
+[8.131621] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:154\x1b[m\x1b[K,\n'}
+[8.131759] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/static_transform_broadcaster.h:38\x1b[m\x1b[K,\n'}
+[8.131917] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:4\x1b[m\x1b[K,\n'}
+[8.132067] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1\x1b[m\x1b[K:\n'}
+[8.132228] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:324:2:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Yp = _Yp; _Tp = rclcpp::Subscription<mage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.132400] (group17) StderrLine: {'line': b'  324 |  \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(auto_ptr<_Yp>&& __r)\n'}
+[8.132555] (group17) StderrLine: {'line': b'      |  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[8.132705] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:324:2:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[8.132870] (group17) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1\x1b[m\x1b[K:\n'}
+[8.133014] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:46:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Yp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.133168] (group17) StderrLine: {'line': b'   46 |      part_subscriber_=this->\x1b[01;36m\x1b[Kcreate_subscription<mage_msgs::msg::AdvancedLogicalCameraImage("mage/advanced_logical_camera/image",10, std::bind(&MyRobotNode::part_sub_cb,this,std::placeholders::_1))\x1b[m\x1b[K;\n'}
+[8.133338] (group17) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.133492] (group17) StderrLine: {'line': b'\n'}
+[8.133635] (group17) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/memory:81\x1b[m\x1b[K,\n'}
+[8.133784] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:154\x1b[m\x1b[K,\n'}
+[8.133922] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/static_transform_broadcaster.h:38\x1b[m\x1b[K,\n'}
+[8.134060] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:4\x1b[m\x1b[K,\n'}
+[8.134201] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1\x1b[m\x1b[K:\n'}
+[8.134333] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:333:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = rclcpp::Subscription<mage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.134473] (group17) StderrLine: {'line': b'  333 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(shared_ptr&& __r) noexcept\n'}
+[8.134618] (group17) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[8.134758] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:333:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[K<unresolved overloaded function type>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Subscription<mage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> > > >&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.134911] (group17) StderrLine: {'line': b'  333 |       operator=(\x1b[01;36m\x1b[Kshared_ptr&& __r\x1b[m\x1b[K) noexcept\n'}
+[8.135060] (group17) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[8.135187] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:341:2:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Yp = _Yp; _Tp = rclcpp::Subscription<mage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.135327] (group17) StderrLine: {'line': b'  341 |  \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(shared_ptr<_Yp>&& __r) noexcept\n'}
+[8.135466] (group17) StderrLine: {'line': b'      |  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[8.135594] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:341:2:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[8.135740] (group17) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1\x1b[m\x1b[K:\n'}
+[8.135883] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:46:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Yp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.136027] (group17) StderrLine: {'line': b'   46 |      part_subscriber_=this->\x1b[01;36m\x1b[Kcreate_subscription<mage_msgs::msg::AdvancedLogicalCameraImage("mage/advanced_logical_camera/image",10, std::bind(&MyRobotNode::part_sub_cb,this,std::placeholders::_1))\x1b[m\x1b[K;\n'}
+[8.136175] (group17) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.136319] (group17) StderrLine: {'line': b'\n'}
+[8.136458] (group17) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/memory:81\x1b[m\x1b[K,\n'}
+[8.136600] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:154\x1b[m\x1b[K,\n'}
+[8.136743] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/static_transform_broadcaster.h:38\x1b[m\x1b[K,\n'}
+[8.136913] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:4\x1b[m\x1b[K,\n'}
+[8.137062] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1\x1b[m\x1b[K:\n'}
+[8.137217] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:349:2:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Yp = _Yp; _Del = _Del; _Tp = rclcpp::Subscription<mage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.137393] (group17) StderrLine: {'line': b'  349 |  \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(unique_ptr<_Yp, _Del>&& __r)\n'}
+[8.137543] (group17) StderrLine: {'line': b'      |  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[8.137692] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:349:2:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[8.137858] (group17) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1\x1b[m\x1b[K:\n'}
+[8.138014] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:46:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Yp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.138161] (group17) StderrLine: {'line': b'   46 |      part_subscriber_=this->\x1b[01;36m\x1b[Kcreate_subscription<mage_msgs::msg::AdvancedLogicalCameraImage("mage/advanced_logical_camera/image",10, std::bind(&MyRobotNode::part_sub_cb,this,std::placeholders::_1))\x1b[m\x1b[K;\n'}
+[8.138312] (group17) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.138458] (group17) StderrLine: {'line': b'\n'}
+[8.146286] (-) TimerEvent: {}
+[8.246642] (-) TimerEvent: {}
+[8.347060] (-) TimerEvent: {}
+[8.447428] (-) TimerEvent: {}
+[8.547844] (-) TimerEvent: {}
+[8.648216] (-) TimerEvent: {}
+[8.748576] (-) TimerEvent: {}
+[8.848954] (-) TimerEvent: {}
+[8.949327] (-) TimerEvent: {}
+[9.049712] (-) TimerEvent: {}
+[9.150089] (-) TimerEvent: {}
+[9.250452] (-) TimerEvent: {}
+[9.350821] (-) TimerEvent: {}
+[9.451195] (-) TimerEvent: {}
+[9.551574] (-) TimerEvent: {}
+[9.651980] (-) TimerEvent: {}
+[9.752382] (-) TimerEvent: {}
+[9.852792] (-) TimerEvent: {}
+[9.953245] (-) TimerEvent: {}
+[10.053628] (-) TimerEvent: {}
+[10.154024] (-) TimerEvent: {}
+[10.254438] (-) TimerEvent: {}
+[10.354838] (-) TimerEvent: {}
+[10.455200] (-) TimerEvent: {}
+[10.555596] (-) TimerEvent: {}
+[10.655990] (-) TimerEvent: {}
+[10.756371] (-) TimerEvent: {}
+[10.776562] (group17) StderrLine: {'line': b'make[2]: *** [CMakeFiles/my_robot_node.dir/build.make:63: CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o] Error 1\n'}
+[10.776884] (group17) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/my_robot_node.dir/all] Error 2\n'}
+[10.777146] (group17) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[10.779926] (group17) CommandEnded: {'returncode': 2}
+[10.856608] (-) TimerEvent: {}
+[10.957415] (-) TimerEvent: {}
+[11.041186] (group17) JobEnded: {'identifier': 'group17', 'rc': 2}
+[11.052702] (-) EventReactorShutdown: {}

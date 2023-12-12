@@ -1,0 +1,136 @@
+[0.360s] Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/group17': AMENT_PREFIX_PATH=/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_simulations:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/group17:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/my_first_package:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs:/home/keyur/ros809_ws/install/first_package:/home/keyur/ros809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic LD_LIBRARY_PATH=/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors/lib:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/group17 -- -j8 -l8
+[1.678s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[1.775s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.076s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[2.349s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.385s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[2.755s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.868s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[2.885s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[2.956s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[3.267s] -- Found mage_msgs: 0.0.0 (/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/share/mage_msgs/cmake)
+[3.424s] -- Found tf2_ros: 0.17.5 (/opt/ros/galactic/share/tf2_ros/cmake)
+[4.149s] -- Found tf2_geometry_msgs: 0.17.5 (/opt/ros/galactic/share/tf2_geometry_msgs/cmake)
+[4.179s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/galactic/share/eigen3_cmake_module/cmake)
+[4.239s] -- Found ros2_aruco_interfaces: 0.1.0 (/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake)
+[4.320s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[4.534s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.536s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.537s] -- Configured cppcheck include dirs: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17
+[4.537s] -- Configured cppcheck exclude dirs and/or files: 
+[4.539s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.539s] -- Configured cpplint exclude dirs and/or files: 
+[4.541s] -- Added test 'lint_cmake' to check CMake code style
+[4.543s] -- Added test 'uncrustify' to check C / C++ code style
+[4.543s] -- Configured uncrustify additional arguments: 
+[4.543s] -- Added test 'xmllint' to check XML markup files
+[4.549s] -- Configuring done
+[4.744s] -- Generating done
+[4.748s] -- Build files have been written to: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/group17
+[4.805s] [35m[1mScanning dependencies of target my_robot_node[0m
+[4.817s] [ 50%] Built target listener
+[4.879s] [ 66%] [32mBuilding CXX object CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o[0m
+[8.123s] In file included from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1[m[K:
+[8.123s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:[m[K In constructor ‘[01m[KMyRobotNode::MyRobotNode(std::string)[m[K’:
+[8.124s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:46:199:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> >::AdvancedLogicalCameraImage_(const char [35], int, std::_Bind_helper<false, void (MyRobotNode::*)(std::shared_ptr<mage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> > >), MyRobotNode*, const std::_Placeholder<1>&>::type)[m[K’
+[8.124s]    46 | ,this,std::placeholders::_1)[01;31m[K)[m[K;
+[8.124s]       |                             [01;31m[K^[m[K
+[8.124s] 
+[8.124s] In file included from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/include/mage_msgs/msg/advanced_logical_camera_image.hpp:7[m[K,
+[8.124s]                  from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:14[m[K,
+[8.125s]                  from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1[m[K:
+[8.125s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/include/mage_msgs/msg/detail/advanced_logical_camera_image__struct.hpp:47:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmage_msgs::msg::AdvancedLogicalCameraImage_<ContainerAllocator>::AdvancedLogicalCameraImage_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[8.125s]    47 |   explicit [01;36m[KAdvancedLogicalCameraImage_[m[K(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+[8.125s]       |            [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.125s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/include/mage_msgs/msg/detail/advanced_logical_camera_image__struct.hpp:47:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 3 provided
+[8.125s] In file included from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/include/mage_msgs/msg/advanced_logical_camera_image.hpp:7[m[K,
+[8.126s]                  from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:14[m[K,
+[8.126s]                  from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1[m[K:
+[8.126s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/include/mage_msgs/msg/detail/advanced_logical_camera_image__struct.hpp:41:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmage_msgs::msg::AdvancedLogicalCameraImage_<ContainerAllocator>::AdvancedLogicalCameraImage_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[8.126s]    41 |   explicit [01;36m[KAdvancedLogicalCameraImage_[m[K(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+[8.126s]       |            [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.126s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/include/mage_msgs/msg/detail/advanced_logical_camera_image__struct.hpp:41:12:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[8.126s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/include/mage_msgs/msg/detail/advanced_logical_camera_image__struct.hpp:37:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> >::AdvancedLogicalCameraImage_(const mage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> >&)[m[K’
+[8.127s]    37 | struct [01;36m[KAdvancedLogicalCameraImage_[m[K
+[8.127s]       |        [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.127s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/include/mage_msgs/msg/detail/advanced_logical_camera_image__struct.hpp:37:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[8.127s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/include/mage_msgs/msg/detail/advanced_logical_camera_image__struct.hpp:37:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> >::AdvancedLogicalCameraImage_(mage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> >&&)[m[K’
+[8.127s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/include/mage_msgs/msg/detail/advanced_logical_camera_image__struct.hpp:37:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[8.127s] In file included from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1[m[K:
+[8.128s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:46:32:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[8.128s]    46 |      part_subscriber_=this->[01;31m[Kcreate_subscription<mage_msgs::msg::AdvancedLogicalCameraImage("mage/advanced_logical_camera/image",10, std::bind(&MyRobotNode::part_sub_cb,this,std::placeholders::_1))[m[K;
+[8.128s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.128s] 
+[8.128s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:46:32:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Krclcpp::Subscription<mage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> > >::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<mage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> > > >[m[K’} and ‘[01m[K<unresolved overloaded function type>[m[K’)
+[8.128s] In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+[8.128s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:154[m[K,
+[8.129s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/static_transform_broadcaster.h:38[m[K,
+[8.129s]                  from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:4[m[K,
+[8.129s]                  from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1[m[K:
+[8.129s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:309:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = rclcpp::Subscription<mage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> > >][m[K’
+[8.129s]   309 |       shared_ptr& [01;36m[Koperator[m[K=(const shared_ptr&) noexcept = default;
+[8.129s]       |                   [01;36m[K^~~~~~~~[m[K
+[8.129s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:309:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kconst std::shared_ptr<rclcpp::Subscription<mage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> > > >&[m[K’
+[8.130s]   309 |       shared_ptr& operator=([01;36m[Kconst shared_ptr&[m[K) noexcept = default;
+[8.130s]       |                             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[8.130s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:313:2:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Yp = _Yp; _Tp = rclcpp::Subscription<mage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> > >][m[K’
+[8.130s]   313 |  [01;36m[Koperator[m[K=(const shared_ptr<_Yp>& __r) noexcept
+[8.130s]       |  [01;36m[K^~~~~~~~[m[K
+[8.130s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:313:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[8.131s] In file included from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1[m[K:
+[8.131s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:46:32:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Yp[m[K’
+[8.131s]    46 |      part_subscriber_=this->[01;36m[Kcreate_subscription<mage_msgs::msg::AdvancedLogicalCameraImage("mage/advanced_logical_camera/image",10, std::bind(&MyRobotNode::part_sub_cb,this,std::placeholders::_1))[m[K;
+[8.131s]       |                             [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.131s] 
+[8.131s] In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+[8.131s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:154[m[K,
+[8.132s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/static_transform_broadcaster.h:38[m[K,
+[8.132s]                  from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:4[m[K,
+[8.132s]                  from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1[m[K:
+[8.132s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:324:2:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Yp = _Yp; _Tp = rclcpp::Subscription<mage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> > >][m[K’
+[8.132s]   324 |  [01;36m[Koperator[m[K=(auto_ptr<_Yp>&& __r)
+[8.132s]       |  [01;36m[K^~~~~~~~[m[K
+[8.132s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:324:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[8.133s] In file included from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1[m[K:
+[8.133s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:46:32:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Yp[m[K’
+[8.133s]    46 |      part_subscriber_=this->[01;36m[Kcreate_subscription<mage_msgs::msg::AdvancedLogicalCameraImage("mage/advanced_logical_camera/image",10, std::bind(&MyRobotNode::part_sub_cb,this,std::placeholders::_1))[m[K;
+[8.133s]       |                             [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.133s] 
+[8.133s] In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+[8.134s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:154[m[K,
+[8.134s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/static_transform_broadcaster.h:38[m[K,
+[8.134s]                  from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:4[m[K,
+[8.134s]                  from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1[m[K:
+[8.134s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:333:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = rclcpp::Subscription<mage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> > >][m[K’
+[8.134s]   333 |       [01;36m[Koperator[m[K=(shared_ptr&& __r) noexcept
+[8.134s]       |       [01;36m[K^~~~~~~~[m[K
+[8.135s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:333:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<mage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> > > >&&[m[K’
+[8.135s]   333 |       operator=([01;36m[Kshared_ptr&& __r[m[K) noexcept
+[8.135s]       |                 [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[8.135s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:341:2:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Yp = _Yp; _Tp = rclcpp::Subscription<mage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> > >][m[K’
+[8.135s]   341 |  [01;36m[Koperator[m[K=(shared_ptr<_Yp>&& __r) noexcept
+[8.135s]       |  [01;36m[K^~~~~~~~[m[K
+[8.135s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:341:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[8.135s] In file included from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1[m[K:
+[8.136s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:46:32:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Yp[m[K’
+[8.136s]    46 |      part_subscriber_=this->[01;36m[Kcreate_subscription<mage_msgs::msg::AdvancedLogicalCameraImage("mage/advanced_logical_camera/image",10, std::bind(&MyRobotNode::part_sub_cb,this,std::placeholders::_1))[m[K;
+[8.136s]       |                             [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.136s] 
+[8.136s] In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+[8.136s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:154[m[K,
+[8.137s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/static_transform_broadcaster.h:38[m[K,
+[8.137s]                  from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:4[m[K,
+[8.137s]                  from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1[m[K:
+[8.137s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:349:2:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Yp = _Yp; _Del = _Del; _Tp = rclcpp::Subscription<mage_msgs::msg::AdvancedLogicalCameraImage_<std::allocator<void> > >][m[K’
+[8.137s]   349 |  [01;36m[Koperator[m[K=(unique_ptr<_Yp, _Del>&& __r)
+[8.137s]       |  [01;36m[K^~~~~~~~[m[K
+[8.137s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:349:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[8.138s] In file included from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1[m[K:
+[8.138s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:46:32:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Yp[m[K’
+[8.138s]    46 |      part_subscriber_=this->[01;36m[Kcreate_subscription<mage_msgs::msg::AdvancedLogicalCameraImage("mage/advanced_logical_camera/image",10, std::bind(&MyRobotNode::part_sub_cb,this,std::placeholders::_1))[m[K;
+[8.138s]       |                             [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.138s] 
+[10.776s] make[2]: *** [CMakeFiles/my_robot_node.dir/build.make:63: CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o] Error 1
+[10.777s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/my_robot_node.dir/all] Error 2
+[10.777s] make: *** [Makefile:141: all] Error 2
+[10.780s] Invoked command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/group17' returned '2': AMENT_PREFIX_PATH=/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_simulations:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/group17:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/my_first_package:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs:/home/keyur/ros809_ws/install/first_package:/home/keyur/ros809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic LD_LIBRARY_PATH=/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors/lib:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/group17 -- -j8 -l8
