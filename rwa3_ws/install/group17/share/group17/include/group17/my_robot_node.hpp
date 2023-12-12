@@ -25,10 +25,13 @@ public:
 
         // initialize the transform broadcaster
         aruco_tf_broadcaster_ = std::make_shared<tf2_ros::TransformBroadcaster>(this);
+        part_tf_broadcaster_ = std::make_shared<tf2_ros::TransformBroadcaster>(this);
 
         // Load a buffer of transforms
         aruco_tf_buffer_ = std::make_unique<tf2_ros::Buffer>(this->get_clock());
         aruco_tf_buffer_->setUsingDedicatedThread(true);
+        part_tf_buffer_ = std::make_unique<tf2_ros::Buffer>(this->get_clock());
+        part_tf_buffer_->setUsingDedicatedThread(true);
         // Create a utils object to use the utility functions
         utils_ptr_ = std::make_shared<Utils>();
 
@@ -41,10 +44,15 @@ public:
         aruco_tf_listener_buffer_->setUsingDedicatedThread(true);
         aruco_transform_listener_ =std::make_shared<tf2_ros::TransformListener>(*aruco_tf_listener_buffer_);
 
+        part_tf_listener_buffer_ =std::make_unique<tf2_ros::Buffer>(this->get_clock());
+        part_tf_listener_buffer_->setUsingDedicatedThread(true);
+        part_transform_listener_ =std::make_shared<tf2_ros::TransformListener>(*aruco_tf_listener_buffer_);
+
+
 
         //********************Subscriber**************************
-        aruco_cam_subscriber_=this->create_subscription<ros2_aruco_interfaces::msg::ArucoMarkers>("aruco_markers",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::aruco_cam_sub_cb,this,std::placeholders::_1));
-        // part_cam_subscriber_=this->create_subscription<mage_msgs::msg::AdvancedLogicalCameraImage>("mage/advanced_logical_camera/image",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::part_cam_sub_cb,this,std::placeholders::_1));
+        // aruco_cam_subscriber_=this->create_subscription<ros2_aruco_interfaces::msg::ArucoMarkers>("aruco_markers",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::aruco_cam_sub_cb,this,std::placeholders::_1));
+        part_cam_subscriber_=this->create_subscription<mage_msgs::msg::AdvancedLogicalCameraImage>("mage/advanced_logical_camera/image",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::part_cam_sub_cb,this,std::placeholders::_1));
 
         //********************Publisher*****************************
         cmd_val_publisher_=this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel",10);
@@ -93,6 +101,8 @@ private:
     std::unique_ptr<tf2_ros::Buffer> aruco_tf_listener_buffer_;
     /*!< Transform listener object */
     std::shared_ptr<tf2_ros::TransformListener> aruco_transform_listener_{nullptr};
+    double aruco_x_pos_;
+    double aurco_y_pos_;
     
     /**
      * @brief Listen to a aruco transform

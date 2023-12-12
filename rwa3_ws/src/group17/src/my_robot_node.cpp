@@ -80,6 +80,7 @@ void MyRobotNode::aruco_listen_transform(const std::string &source_frame, const 
     pose_out.position.y = t_stamped.transform.translation.y;
     pose_out.position.z = t_stamped.transform.translation.z;
     pose_out.orientation = t_stamped.transform.rotation;
+    // int x = t_stamped.transform.translation.x;
 
     // RCLCPP_INFO_STREAM(this->get_logger(), target_frame << " in " << source_frame << ":\n"
     //                                                     << "x: " << pose_out.position.x << "\t"
