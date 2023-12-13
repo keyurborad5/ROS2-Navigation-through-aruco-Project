@@ -1,0 +1,180 @@
+[0.000000] (-) TimerEvent: {}
+[0.000124] (-) JobUnselected: {'identifier': 'mage_msgs'}
+[0.000185] (-) JobUnselected: {'identifier': 'ros2_aruco'}
+[0.000210] (-) JobUnselected: {'identifier': 'ros2_aruco_interfaces'}
+[0.000231] (-) JobUnselected: {'identifier': 'turtlebot3_fake_node'}
+[0.000872] (-) JobUnselected: {'identifier': 'turtlebot3_gazebo'}
+[0.000968] (-) JobUnselected: {'identifier': 'turtlebot3_sensors'}
+[0.000997] (-) JobUnselected: {'identifier': 'turtlebot3_simulations'}
+[0.001021] (group17) JobQueued: {'identifier': 'group17', 'dependencies': OrderedDict([('mage_msgs', '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs'), ('ros2_aruco_interfaces', '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces'), ('turtlebot3_fake_node', '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node'), ('turtlebot3_gazebo', '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo'), ('turtlebot3_simulations', '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_simulations')])}
+[0.001056] (group17) JobStarted: {'identifier': 'group17'}
+[0.099885] (-) TimerEvent: {}
+[0.201436] (-) TimerEvent: {}
+[0.303716] (-) TimerEvent: {}
+[0.345641] (group17) JobProgress: {'identifier': 'group17', 'progress': 'cmake'}
+[0.346559] (group17) JobProgress: {'identifier': 'group17', 'progress': 'build'}
+[0.347430] (group17) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/group17', '--', '-j8', '-l8'], 'cwd': '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/group17', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'keyur'), ('SSH_AGENT_PID', '1490'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors/lib:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/keyur'), ('OLDPWD', '/home/keyur'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1129'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4681'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install:/home/keyur/ros809_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'keyur'), ('JOURNAL_STREAM', '8:37754'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'keyur'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/keyur:@/tmp/.ICE-unix/1528,unix/keyur:/tmp/.ICE-unix/1528'), ('INVOCATION_ID', 'ecb9378ecee64ada87dcaaaf5cc873ad'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_simulations:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/group17:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/my_first_package:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs:/home/keyur/ros809_ws/install/first_package:/home/keyur/ros809_ws/install/automated_vehicle:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:24535dfb-5ba9-417f-92d1-3870642c0bd4'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/group17'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_simulations:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/group17:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/my_first_package:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs:/home/keyur/ros809_ws/install/first_package:/home/keyur/ros809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic')]), 'shell': False}
+[0.403905] (-) TimerEvent: {}
+[0.416942] (group17) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target my_robot_node\x1b[0m\n'}
+[0.441940] (group17) StdoutLine: {'line': b'[ 50%] Built target listener\n'}
+[0.477620] (group17) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o\x1b[0m\n'}
+[0.504021] (-) TimerEvent: {}
+[0.604395] (-) TimerEvent: {}
+[0.704710] (-) TimerEvent: {}
+[0.805063] (-) TimerEvent: {}
+[0.905399] (-) TimerEvent: {}
+[1.005796] (-) TimerEvent: {}
+[1.106352] (-) TimerEvent: {}
+[1.207509] (-) TimerEvent: {}
+[1.308571] (-) TimerEvent: {}
+[1.409124] (-) TimerEvent: {}
+[1.509494] (-) TimerEvent: {}
+[1.609876] (-) TimerEvent: {}
+[1.710291] (-) TimerEvent: {}
+[1.810701] (-) TimerEvent: {}
+[1.911254] (-) TimerEvent: {}
+[2.011794] (-) TimerEvent: {}
+[2.112315] (-) TimerEvent: {}
+[2.212637] (-) TimerEvent: {}
+[2.312950] (-) TimerEvent: {}
+[2.413251] (-) TimerEvent: {}
+[2.513529] (-) TimerEvent: {}
+[2.613814] (-) TimerEvent: {}
+[2.714086] (-) TimerEvent: {}
+[2.814411] (-) TimerEvent: {}
+[2.914740] (-) TimerEvent: {}
+[3.015064] (-) TimerEvent: {}
+[3.115398] (-) TimerEvent: {}
+[3.215682] (-) TimerEvent: {}
+[3.316013] (-) TimerEvent: {}
+[3.416326] (-) TimerEvent: {}
+[3.435144] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:17:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.435381] (group17) StderrLine: {'line': b'   17 |    \x1b[01;31m\x1b[Kint\x1b[m\x1b[K j=0;\n'}
+[3.435465] (group17) StderrLine: {'line': b'      |    \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.435540] (group17) StderrLine: {'line': b'\n'}
+[3.436952] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:25:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmarker_id_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[3.437105] (group17) StderrLine: {'line': b'   25 | \x1b[01;31m\x1b[Kid_\x1b[m\x1b[K=msg->marker_ids[j];\n'}
+[3.437202] (group17) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~\x1b[m\x1b[K\n'}
+[3.437282] (group17) StderrLine: {'line': b'\n'}
+[3.437359] (group17) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[3.437452] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[3.437682] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.437777] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.437853] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.437934] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.438004] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executor.hpp:36\x1b[m\x1b[K,\n'}
+[3.438084] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[3.438267] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.438375] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[3.438476] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/static_transform_broadcaster.h:38\x1b[m\x1b[K,\n'}
+[3.438570] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:4\x1b[m\x1b[K,\n'}
+[3.438663] (group17) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1\x1b[m\x1b[K:\n'}
+[3.438756] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:29:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kdo\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.438858] (group17) StderrLine: {'line': b'   29 | \x1b[01;31m\x1b[KINFO\x1b[m\x1b[K(this->get_logger(), "Broadcasting dynamic_frame");\n'}
+[3.439116] (group17) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~\x1b[m\x1b[K\n'}
+[3.439223] (group17) StderrLine: {'line': b'\n'}
+[3.439319] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:29:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kwhile\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.439433] (group17) StderrLine: {'line': b'   29 | \x1b[01;31m\x1b[KINFO\x1b[m\x1b[K(this->get_logger(), "Broadcasting dynamic_frame");\n'}
+[3.439526] (group17) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~\x1b[m\x1b[K\n'}
+[3.439758] (group17) StderrLine: {'line': b'\n'}
+[3.439899] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:30:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Karuco_dynamic_transform_stamped\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[3.440062] (group17) StderrLine: {'line': b'   30 | \x1b[01;31m\x1b[Kynamic_transform_stamped\x1b[m\x1b[K.header.stamp = msg->header.stamp;\n'}
+[3.440211] (group17) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.440326] (group17) StderrLine: {'line': b'\n'}
+[3.440414] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:32:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Karuco_dynamic_transform_stamped\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[3.440504] (group17) StderrLine: {'line': b'   32 | \x1b[01;31m\x1b[Kynamic_transform_stamped\x1b[m\x1b[K.header.frame_id = msg->header.frame_id;\n'}
+[3.440599] (group17) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.440787] (group17) StderrLine: {'line': b'\n'}
+[3.440931] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:33:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Karuco_dynamic_transform_stamped\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[3.441049] (group17) StderrLine: {'line': b'   33 | \x1b[01;31m\x1b[Kynamic_transform_stamped\x1b[m\x1b[K.child_frame_id = "aruco_mark";\n'}
+[3.441143] (group17) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.441277] (group17) StderrLine: {'line': b'\n'}
+[3.441394] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:35:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Karuco_dynamic_transform_stamped\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[3.441602] (group17) StderrLine: {'line': b'   35 | \x1b[01;31m\x1b[Kynamic_transform_stamped\x1b[m\x1b[K.transform.translation.x = msg->poses[j].position.x;\n'}
+[3.441722] (group17) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.441835] (group17) StderrLine: {'line': b'\n'}
+[3.441939] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:36:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Karuco_dynamic_transform_stamped\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[3.442092] (group17) StderrLine: {'line': b'   36 | \x1b[01;31m\x1b[Kynamic_transform_stamped\x1b[m\x1b[K.transform.translation.y = msg->poses[j].position.y;\n'}
+[3.442217] (group17) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.442325] (group17) StderrLine: {'line': b'\n'}
+[3.442915] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:37:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Karuco_dynamic_transform_stamped\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[3.443072] (group17) StderrLine: {'line': b'   37 | \x1b[01;31m\x1b[Kynamic_transform_stamped\x1b[m\x1b[K.transform.translation.z = msg->poses[j].position.z;\n'}
+[3.443175] (group17) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.443298] (group17) StderrLine: {'line': b'\n'}
+[3.444295] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:40:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Karuco_dynamic_transform_stamped\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[3.444522] (group17) StderrLine: {'line': b'   40 | \x1b[01;31m\x1b[Kynamic_transform_stamped\x1b[m\x1b[K.transform.rotation.x = msg->poses[j].orientation.x;\n'}
+[3.444674] (group17) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.444817] (group17) StderrLine: {'line': b'\n'}
+[3.445528] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:41:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Karuco_dynamic_transform_stamped\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[3.445801] (group17) StderrLine: {'line': b'   41 | \x1b[01;31m\x1b[Kynamic_transform_stamped\x1b[m\x1b[K.transform.rotation.y = msg->poses[j].orientation.y;\n'}
+[3.446064] (group17) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.446249] (group17) StderrLine: {'line': b'\n'}
+[3.447205] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:42:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Karuco_dynamic_transform_stamped\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[3.447378] (group17) StderrLine: {'line': b'   42 | \x1b[01;31m\x1b[Kynamic_transform_stamped\x1b[m\x1b[K.transform.rotation.z = msg->poses[j].orientation.z;\n'}
+[3.447489] (group17) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.447595] (group17) StderrLine: {'line': b'\n'}
+[3.448555] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:43:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Karuco_dynamic_transform_stamped\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[3.448865] (group17) StderrLine: {'line': b'   43 | \x1b[01;31m\x1b[Kynamic_transform_stamped\x1b[m\x1b[K.transform.rotation.w = msg->poses[j].orientation.w;\n'}
+[3.449066] (group17) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.449256] (group17) StderrLine: {'line': b'\n'}
+[3.453357] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:45:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Karuco_tf_broadcaster_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[3.453615] (group17) StderrLine: {'line': b'   45 | \x1b[01;31m\x1b[Kf_broadcaster_\x1b[m\x1b[K->sendTransform(aruco_dynamic_transform_stamped);\n'}
+[3.453715] (group17) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.453804] (group17) StderrLine: {'line': b'\n'}
+[3.453918] (group17) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:47:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[3.454097] (group17) StderrLine: {'line': b'   47 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K\n'}
+[3.454273] (group17) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.516456] (-) TimerEvent: {}
+[3.616730] (-) TimerEvent: {}
+[3.717042] (-) TimerEvent: {}
+[3.817310] (-) TimerEvent: {}
+[3.917559] (-) TimerEvent: {}
+[4.017873] (-) TimerEvent: {}
+[4.118186] (-) TimerEvent: {}
+[4.218504] (-) TimerEvent: {}
+[4.318816] (-) TimerEvent: {}
+[4.419133] (-) TimerEvent: {}
+[4.519456] (-) TimerEvent: {}
+[4.619769] (-) TimerEvent: {}
+[4.720074] (-) TimerEvent: {}
+[4.820391] (-) TimerEvent: {}
+[4.920767] (-) TimerEvent: {}
+[5.021112] (-) TimerEvent: {}
+[5.121447] (-) TimerEvent: {}
+[5.221820] (-) TimerEvent: {}
+[5.322181] (-) TimerEvent: {}
+[5.422499] (-) TimerEvent: {}
+[5.522882] (-) TimerEvent: {}
+[5.623234] (-) TimerEvent: {}
+[5.723545] (-) TimerEvent: {}
+[5.823862] (-) TimerEvent: {}
+[5.924180] (-) TimerEvent: {}
+[6.024570] (-) TimerEvent: {}
+[6.124922] (-) TimerEvent: {}
+[6.225284] (-) TimerEvent: {}
+[6.325584] (-) TimerEvent: {}
+[6.425939] (-) TimerEvent: {}
+[6.526328] (-) TimerEvent: {}
+[6.626677] (-) TimerEvent: {}
+[6.727098] (-) TimerEvent: {}
+[6.827578] (-) TimerEvent: {}
+[6.927974] (-) TimerEvent: {}
+[7.028335] (-) TimerEvent: {}
+[7.128706] (-) TimerEvent: {}
+[7.229074] (-) TimerEvent: {}
+[7.329475] (-) TimerEvent: {}
+[7.429887] (-) TimerEvent: {}
+[7.530237] (-) TimerEvent: {}
+[7.630685] (-) TimerEvent: {}
+[7.731383] (-) TimerEvent: {}
+[7.832011] (-) TimerEvent: {}
+[7.932544] (-) TimerEvent: {}
+[7.934032] (group17) StderrLine: {'line': b'make[2]: *** [CMakeFiles/my_robot_node.dir/build.make:63: CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o] Error 1\n'}
+[7.934917] (group17) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/my_robot_node.dir/all] Error 2\n'}
+[7.935681] (group17) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[7.944603] (group17) CommandEnded: {'returncode': 2}
+[8.050344] (-) TimerEvent: {}
+[8.152305] (-) TimerEvent: {}
+[8.253378] (-) TimerEvent: {}
+[8.297367] (group17) JobEnded: {'identifier': 'group17', 'rc': 2}
+[8.308177] (-) EventReactorShutdown: {}

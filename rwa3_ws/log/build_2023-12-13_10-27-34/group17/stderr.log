@@ -1,0 +1,4 @@
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:[m[K In member function ‘[01m[Kvoid MyRobotNode::aruco_cam_sub_cb(ros2_aruco_interfaces::msg::ArucoMarkers_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:190:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksmall_val[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  190 |     double [01;35m[Ksmall_val[m[K=100000;
+      |            [01;35m[K^~~~~~~~~[m[K

@@ -102,10 +102,14 @@ private:
     std::shared_ptr<tf2_ros::TransformBroadcaster> part_tf_broadcaster_;
     /*!< Utils object to access utility functions*/
     std::shared_ptr<Utils> utils_ptr_;
-    int part_color_;
+    double part_color_;
     int part_type_;
     int marker_id_;
     double target_rad_ =current_yaw_;
+    double old_rad_ =current_yaw_;
+
+    std::vector<double> part_vector_;
+    std::vector<std::vector<double>> parts_vector_;
     
     
 

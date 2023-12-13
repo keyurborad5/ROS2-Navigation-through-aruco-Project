@@ -13,24 +13,41 @@ using namespace std::chrono_literals;
 
 
 void MyRobotNode::aruco_broadcaster(ros2_aruco_interfaces::msg::ArucoMarkers::SharedPtr msg)
-{
+{  
+    double small_val=100000;
+    long unsigned j=0;
+    RCLCPP_INFO_STREAM(this->get_logger(),"number of markerID : "<<msg->marker_ids.size());
+    if(msg->marker_ids.size()!=0){
+        for( long unsigned int i=0 ; i<=msg->marker_ids.size();++i){
+                
+                if(small_val>msg->poses[i].position.z){
+                    small_val=msg->poses[i].position.z;
+                    j=i-1;
+                }
+        }
+            RCLCPP_INFO_STREAM(this->get_logger(),"closest distance: "<<msg->poses[j].position.z);
+    }
+
+    // if (j>3){j=0;}
+    marker_id_=msg->marker_ids[j];
+
     geometry_msgs::msg::TransformStamped aruco_dynamic_transform_stamped;
 
-    // RCLCPP_INFO(this->get_logger(), "Broadcasting dynamic_frame");
+     RCLCPP_INFO(this->get_logger(), "Broadcasting dynamic_frame");
     aruco_dynamic_transform_stamped.header.stamp = msg->header.stamp;
 
     aruco_dynamic_transform_stamped.header.frame_id = msg->header.frame_id;
     aruco_dynamic_transform_stamped.child_frame_id = "aruco_mark";
 
-    aruco_dynamic_transform_stamped.transform.translation.x = msg->poses[0].position.x;
-    aruco_dynamic_transform_stamped.transform.translation.y = msg->poses[0].position.y;
-    aruco_dynamic_transform_stamped.transform.translation.z = msg->poses[0].position.z;
+    aruco_dynamic_transform_stamped.transform.translation.x = msg->poses[j].position.x;
+    aruco_dynamic_transform_stamped.transform.translation.y = msg->poses[j].position.y;
+    aruco_dynamic_transform_stamped.transform.translation.z = msg->poses[j].position.z;
 
     //geometry_msgs::msg::Quaternion quaternion = utils_ptr_->set_quaternion_from_euler(M_PI, 0.0, M_PI / 3);
-    aruco_dynamic_transform_stamped.transform.rotation.x = msg->poses[0].orientation.x;
-    aruco_dynamic_transform_stamped.transform.rotation.y = msg->poses[0].orientation.y;
-    aruco_dynamic_transform_stamped.transform.rotation.z = msg->poses[0].orientation.z;
-    aruco_dynamic_transform_stamped.transform.rotation.w = msg->poses[0].orientation.w;
+    aruco_dynamic_transform_stamped.transform.rotation.x = msg->poses[j].orientation.x;
+    aruco_dynamic_transform_stamped.transform.rotation.y = msg->poses[j].orientation.y;
+    aruco_dynamic_transform_stamped.transform.rotation.z = msg->poses[j].orientation.z;
+    aruco_dynamic_transform_stamped.transform.rotation.w = msg->poses[j].orientation.w;
     // Send the transform
     aruco_tf_broadcaster_->sendTransform(aruco_dynamic_transform_stamped);
     // RCLCPP_INFO_STREAM(this->get_logger(), "Aruco Broadcasting_dynamic_frame : "<<msg->poses[0].position.x);
@@ -142,6 +159,18 @@ void MyRobotNode::part_listen_transform(const std::string &source_frame, const s
     pose_out.position.z = t_stamped.transform.translation.z;
     pose_out.orientation = t_stamped.transform.rotation;
 
+    tf2::Quaternion q( 
+        pose_out.orientation.x,
+        pose_out.orientation.y,
+        pose_out.orientation.z,
+        pose_out.orientation.w);
+    std::array<double, 3> euler = utils_ptr_->set_euler_from_quaternion(q);
+    part_vector_={part_color_,pose_out.position.x,pose_out.position.y,pose_out.position.z,euler[0],euler[1],euler[2]};
+    // for(size_t i; i<parts_vector_.size();++i){
+    //     if(parts_vector_[i][0])
+
+    // }
+
     // RCLCPP_INFO_STREAM(this->get_logger(), target_frame << " in " << source_frame << ":\n"
     //                                                     << "x: " << pose_out.position.x << "\t"
     //                                                     << "y: " << pose_out.position.y << "\t"
@@ -154,14 +183,18 @@ void MyRobotNode::part_listen_transform(const std::string &source_frame, const s
 
 
 void MyRobotNode::aruco_cam_sub_cb(ros2_aruco_interfaces::msg::ArucoMarkers::SharedPtr msg){
-    
-    // RCLCPP_INFO_STREAM(this->get_logger(),"Aruco marker callback ");
-    
+
+   if(!msg->marker_ids.empty()){
     aruco_broadcaster(msg);
-    marker_id_=msg->marker_ids[0];
 
     aruco_listen_transform("odom", "aruco_mark");  
-    base_link_listen_transform("odom", "base_link");   
+    base_link_listen_transform("odom", "base_link");
+
+   }
+    else{
+   
+     RCLCPP_INFO_STREAM(this->get_logger(),"NO Aruco marker FOUND ");
+    }
 
 }
 void MyRobotNode::part_cam_sub_cb(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr msg){
@@ -211,17 +244,17 @@ double MyRobotNode::convertToMinusPiToPi(double radians) {
 void MyRobotNode::cmd_val_pub_cb(){
     geometry_msgs::msg::Twist linear;
     double dist=MyRobotNode::distance(aruco_x_pos_,aruco_y_pos_,base_link_x_pos_,base_link_y_pos_);
-    double kp= 0.5;
+    double kp= 0.8;
     
     double rotate_rad;
 
     switch (marker_id_)
     {
     case 0:
-        rotate_rad = -90*M_PI/180;
+        rotate_rad = -85*M_PI/180;
         break;
     case 1:
-        rotate_rad = 90*M_PI/180;
+        rotate_rad = 85*M_PI/180;
         break;
     case 2:
         rotate_rad = 0*M_PI/180;
@@ -235,7 +268,7 @@ void MyRobotNode::cmd_val_pub_cb(){
 
     if(dist>=1.0 && flag1_==true){
         
-        linear.angular.z=0.0;
+        linear.angular.z=0.0*(old_rad_-current_yaw_);
         linear.linear.x = 0.1;
         RCLCPP_INFO_STREAM(this->get_logger(),"Going_forward by 0.1m/s, dist: "<< dist);
         target_rad_=current_yaw_+rotate_rad;
@@ -252,7 +285,7 @@ void MyRobotNode::cmd_val_pub_cb(){
         linear.angular.z=kp*(target_rad_-current_yaw_);
         cmd_val_publisher_->publish(linear);
         RCLCPP_INFO_STREAM(this->get_logger(),"NOWW TURNING, : "<< current_yaw_);
-        if(abs(target_rad_-current_yaw_)<0.01){flag1_=true;}
+        if(abs(target_rad_-current_yaw_)<0.01){flag1_=true; old_rad_=target_rad_;}
         
         
     }

@@ -1,0 +1,4 @@
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:[m[K In member function ‘[01m[Kvoid MyRobotNode::aruco_broadcaster(ros2_aruco_interfaces::msg::ArucoMarkers_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:21:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Klong int[m[K’ and ‘[01m[Kstd::vector<long int, std::allocator<long int> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+   21 |         for( long int i=0 ; [01;35m[Ki<=msg->marker_ids.size()[m[K;++i){
+      |                             [01;35m[K~^~~~~~~~~~~~~~~~~~~~~~~~[m[K

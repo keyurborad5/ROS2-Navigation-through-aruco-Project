@@ -1,0 +1,84 @@
+[0.347s] Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/group17': AMENT_PREFIX_PATH=/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_simulations:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/group17:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/my_first_package:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs:/home/keyur/ros809_ws/install/first_package:/home/keyur/ros809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic LD_LIBRARY_PATH=/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors/lib:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/group17 -- -j8 -l8
+[0.416s] [35m[1mScanning dependencies of target my_robot_node[0m
+[0.441s] [ 50%] Built target listener
+[0.477s] [ 66%] [32mBuilding CXX object CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o[0m
+[3.434s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:17:5:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kint[m[K’
+[3.434s]    17 |    [01;31m[Kint[m[K j=0;
+[3.434s]       |    [01;31m[K^~~[m[K
+[3.435s] 
+[3.436s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:25:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmarker_id_[m[K’ does not name a type
+[3.436s]    25 | [01;31m[Kid_[m[K=msg->marker_ids[j];
+[3.436s]       | [01;31m[K~~~[m[K
+[3.436s] 
+[3.436s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/service.hpp:34[m[K,
+[3.437s]                  from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:25[m[K,
+[3.437s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[3.437s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[3.437s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[3.437s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[3.437s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[3.437s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[3.437s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[3.437s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.437s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/static_transform_broadcaster.h:38[m[K,
+[3.438s]                  from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:4[m[K,
+[3.438s]                  from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1[m[K:
+[3.438s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:29:6:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kdo[m[K’
+[3.438s]    29 | [01;31m[KINFO[m[K(this->get_logger(), "Broadcasting dynamic_frame");
+[3.438s]       | [01;31m[K~~~~[m[K
+[3.438s] 
+[3.438s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:29:6:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kwhile[m[K’
+[3.438s]    29 | [01;31m[KINFO[m[K(this->get_logger(), "Broadcasting dynamic_frame");
+[3.439s]       | [01;31m[K~~~~[m[K
+[3.439s] 
+[3.439s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:30:5:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_dynamic_transform_stamped[m[K’ does not name a type
+[3.439s]    30 | [01;31m[Kynamic_transform_stamped[m[K.header.stamp = msg->header.stamp;
+[3.439s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.439s] 
+[3.439s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:32:5:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_dynamic_transform_stamped[m[K’ does not name a type
+[3.439s]    32 | [01;31m[Kynamic_transform_stamped[m[K.header.frame_id = msg->header.frame_id;
+[3.440s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.440s] 
+[3.440s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:33:5:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_dynamic_transform_stamped[m[K’ does not name a type
+[3.440s]    33 | [01;31m[Kynamic_transform_stamped[m[K.child_frame_id = "aruco_mark";
+[3.440s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.440s] 
+[3.440s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:35:5:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_dynamic_transform_stamped[m[K’ does not name a type
+[3.441s]    35 | [01;31m[Kynamic_transform_stamped[m[K.transform.translation.x = msg->poses[j].position.x;
+[3.441s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.441s] 
+[3.441s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:36:5:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_dynamic_transform_stamped[m[K’ does not name a type
+[3.441s]    36 | [01;31m[Kynamic_transform_stamped[m[K.transform.translation.y = msg->poses[j].position.y;
+[3.441s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.441s] 
+[3.442s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:37:5:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_dynamic_transform_stamped[m[K’ does not name a type
+[3.442s]    37 | [01;31m[Kynamic_transform_stamped[m[K.transform.translation.z = msg->poses[j].position.z;
+[3.442s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.442s] 
+[3.443s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:40:5:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_dynamic_transform_stamped[m[K’ does not name a type
+[3.444s]    40 | [01;31m[Kynamic_transform_stamped[m[K.transform.rotation.x = msg->poses[j].orientation.x;
+[3.444s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.444s] 
+[3.445s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:41:5:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_dynamic_transform_stamped[m[K’ does not name a type
+[3.445s]    41 | [01;31m[Kynamic_transform_stamped[m[K.transform.rotation.y = msg->poses[j].orientation.y;
+[3.445s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.445s] 
+[3.446s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:42:5:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_dynamic_transform_stamped[m[K’ does not name a type
+[3.446s]    42 | [01;31m[Kynamic_transform_stamped[m[K.transform.rotation.z = msg->poses[j].orientation.z;
+[3.446s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.447s] 
+[3.448s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:43:5:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_dynamic_transform_stamped[m[K’ does not name a type
+[3.448s]    43 | [01;31m[Kynamic_transform_stamped[m[K.transform.rotation.w = msg->poses[j].orientation.w;
+[3.448s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.448s] 
+[3.452s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:45:5:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_tf_broadcaster_[m[K’ does not name a type
+[3.453s]    45 | [01;31m[Kf_broadcaster_[m[K->sendTransform(aruco_dynamic_transform_stamped);
+[3.453s]       | [01;31m[K~~~~~~~~~~~~~~[m[K
+[3.453s] 
+[3.453s] [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:47:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[3.453s]    47 | [01;31m[K}[m[K
+[3.453s]       | [01;31m[K^[m[K
+[7.933s] make[2]: *** [CMakeFiles/my_robot_node.dir/build.make:63: CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o] Error 1
+[7.934s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/my_robot_node.dir/all] Error 2
+[7.935s] make: *** [Makefile:141: all] Error 2
+[7.945s] Invoked command in '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/group17' returned '2': AMENT_PREFIX_PATH=/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_simulations:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/group17:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/my_first_package:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs:/home/keyur/ros809_ws/install/first_package:/home/keyur/ros809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic LD_LIBRARY_PATH=/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors/lib:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/build/group17 -- -j8 -l8
