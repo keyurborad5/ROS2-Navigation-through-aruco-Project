@@ -47,7 +47,7 @@ if __name__ == "__main__":
                             -0.569359, 1.834770, 0.35], [0, 0, 0.78539816339])
     part_spawner.spawn_part("green_battery_99", "battery",
                             "green", [-1.047505, -0.939857, 0.35], [0, -0.33, 1.57])
-    part_spawner.spawn_part("yellow_orange_99", "battery",
+    part_spawner.spawn_part("orange_battery_99", "battery",
                             "orange", [-2.277804, -3.026862, 0.35], [0, 0.33, 1.57])
 
     part_spawner.destroy_node()

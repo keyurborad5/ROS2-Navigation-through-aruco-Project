@@ -67,7 +67,7 @@ void MyRobotNode::part_broadcaster(mage_msgs::msg::AdvancedLogicalCameraImage::S
 
     part_dynamic_transform_stamped.transform.translation.x = msg->part_poses[0].pose.position.x;
     part_dynamic_transform_stamped.transform.translation.y = msg->part_poses[0].pose.position.y;
-    part_dynamic_transform_stamped.transform.translation.z = msg->part_poses[0].pose.position.z;
+    part_dynamic_transform_stamped.transform.translation.z = -msg->part_poses[0].pose.position.z;
 
     //geometry_msgs::msg::Quaternion quaternion = utils_ptr_->set_quaternion_from_euler(M_PI, 0.0, M_PI / 3);
     part_dynamic_transform_stamped.transform.rotation.x = msg->part_poses[0].pose.orientation.x;
@@ -165,20 +165,20 @@ void MyRobotNode::part_listen_transform(const std::string &source_frame, const s
         pose_out.orientation.z,
         pose_out.orientation.w);
     std::array<double, 3> euler = utils_ptr_->set_euler_from_quaternion(q);
-    part_vector_={part_color_,pose_out.position.x,pose_out.position.y,pose_out.position.z,euler[0],euler[1],euler[2]};
+    //part_vector_={part_color_,pose_out.position.x,pose_out.position.y,pose_out.position.z,euler[0],euler[1],euler[2]};
     // for(size_t i; i<parts_vector_.size();++i){
     //     if(parts_vector_[i][0])
 
     // }
 
-    // RCLCPP_INFO_STREAM(this->get_logger(), target_frame << " in " << source_frame << ":\n"
-    //                                                     << "x: " << pose_out.position.x << "\t"
-    //                                                     << "y: " << pose_out.position.y << "\t"
-    //                                                     << "z: " << pose_out.position.z << "\n"
-    //                                                     << "qx: " << pose_out.orientation.x << "\t"
-    //                                                     << "qy: " << pose_out.orientation.y << "\t"
-    //                                                     << "qz: " << pose_out.orientation.z << "\t"
-    //                                                     << "qw: " << pose_out.orientation.w << "\n");
+    RCLCPP_INFO_STREAM(this->get_logger(), target_frame << " in " << source_frame << ":\n"
+                                                        << "x: " << pose_out.position.x << "\t"
+                                                        << "y: " << pose_out.position.y << "\t"
+                                                        << "z: " << pose_out.position.z << "\n"
+                                                        << "qx: " << pose_out.orientation.x << "\t"
+                                                        << "qy: " << pose_out.orientation.y << "\t"
+                                                        << "qz: " << pose_out.orientation.z << "\t"
+                                                        << "qw: " << pose_out.orientation.w << "\n");
 }
 
 
@@ -199,15 +199,17 @@ void MyRobotNode::aruco_cam_sub_cb(ros2_aruco_interfaces::msg::ArucoMarkers::Sha
 }
 void MyRobotNode::part_cam_sub_cb(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr msg){
     
-    if(msg){
+    if(!msg->part_poses.empty()){
     RCLCPP_INFO_STREAM(this->get_logger(),"Part Advance Camera callback : ");
 
    
     
     part_broadcaster(msg);
 
-    part_listen_transform("odom", "logical_camera_link");   
+    part_listen_transform("odom", "part");   
     }
+    else{    RCLCPP_INFO_STREAM(this->get_logger(),"NO Part Detected : ");}
+
 }
 
 void MyRobotNode::odom_sub_cb(nav_msgs::msg::Odometry::SharedPtr msg){
@@ -269,7 +271,7 @@ void MyRobotNode::cmd_val_pub_cb(){
     if(dist>=1.0 && flag1_==true){
         
         linear.angular.z=0.0*(old_rad_-current_yaw_);
-        linear.linear.x = 0.1;
+        linear.linear.x = 0.3;
         RCLCPP_INFO_STREAM(this->get_logger(),"Going_forward by 0.1m/s, dist: "<< dist);
         target_rad_=current_yaw_+rotate_rad;
         target_rad_=convertToMinusPiToPi(target_rad_);

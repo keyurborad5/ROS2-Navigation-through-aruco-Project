@@ -1,0 +1,4 @@
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:[m[K In member function ‘[01m[Kvoid MyRobotNode::part_listen_transform(const string&, const string&)[m[K’:
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:167:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Keuler[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  167 |     std::array<double, 3> [01;35m[Keuler[m[K = utils_ptr_->set_euler_from_quaternion(q);
+      |                           [01;35m[K^~~~~[m[K

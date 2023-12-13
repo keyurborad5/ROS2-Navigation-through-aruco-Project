@@ -64,22 +64,23 @@ public:
 
         part_tf_listener_buffer_ =std::make_unique<tf2_ros::Buffer>(this->get_clock());
         part_tf_listener_buffer_->setUsingDedicatedThread(true);
-        part_transform_listener_ =std::make_shared<tf2_ros::TransformListener>(*aruco_tf_listener_buffer_);
+        part_transform_listener_ =std::make_shared<tf2_ros::TransformListener>(*part_tf_listener_buffer_);
 
 
 
         //********************Subscriber**************************
-        aruco_cam_subscriber_=this->create_subscription<ros2_aruco_interfaces::msg::ArucoMarkers>("aruco_markers",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::aruco_cam_sub_cb,this,std::placeholders::_1));
-        // part_cam_subscriber_=this->create_subscription<mage_msgs::msg::AdvancedLogicalCameraImage>("mage/advanced_logical_camera/image",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::part_cam_sub_cb,this,std::placeholders::_1));
+        // aruco_cam_subscriber_=this->create_subscription<ros2_aruco_interfaces::msg::ArucoMarkers>("aruco_markers",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::aruco_cam_sub_cb,this,std::placeholders::_1));
+        rclcpp::QoS qos(10); qos.reliability(RMW_QOS_POLICY_RELIABILITY_BEST_EFFORT);
+        part_cam_subscriber_=this->create_subscription<mage_msgs::msg::AdvancedLogicalCameraImage>("mage/advanced_logical_camera/image",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::part_cam_sub_cb,this,std::placeholders::_1));
         
         odom_subscriber_=this->create_subscription<nav_msgs::msg::Odometry>("odom",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::odom_sub_cb,this,std::placeholders::_1));
 
         //********************Publisher*****************************
         cmd_val_publisher_=this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel",10);
 
-        std::this_thread::sleep_for(std::chrono::seconds(5));
+        // std::this_thread::sleep_for(std::chrono::seconds(5));
 
-        cmd_val_timer_ = this->create_wall_timer(std::chrono::milliseconds(100),std::bind(&MyRobotNode::cmd_val_pub_cb,this));
+        // cmd_val_timer_ = this->create_wall_timer(std::chrono::milliseconds(100),std::bind(&MyRobotNode::cmd_val_pub_cb,this));
         
 
     }
@@ -102,8 +103,8 @@ private:
     std::shared_ptr<tf2_ros::TransformBroadcaster> part_tf_broadcaster_;
     /*!< Utils object to access utility functions*/
     std::shared_ptr<Utils> utils_ptr_;
-    double part_color_;
-    int part_type_;
+    uint8_t part_color_;
+    uint8_t part_type_;
     int marker_id_;
     double target_rad_ =current_yaw_;
     double old_rad_ =current_yaw_;
