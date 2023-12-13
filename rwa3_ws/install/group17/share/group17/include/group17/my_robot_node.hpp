@@ -103,14 +103,14 @@ private:
     std::shared_ptr<tf2_ros::TransformBroadcaster> part_tf_broadcaster_;
     /*!< Utils object to access utility functions*/
     std::shared_ptr<Utils> utils_ptr_;
-    uint8_t part_color_;
+    double part_color_;
     uint8_t part_type_;
     int marker_id_;
     double target_rad_ =current_yaw_;
     double old_rad_ =current_yaw_;
 
     std::vector<double> part_vector_;
-    std::vector<std::vector<double>> parts_vector_;
+    std::vector<std::vector<double>> parts_vector_{0};
     
     
 
@@ -193,6 +193,6 @@ private:
     //************************Calculating Distance****************************
     double distance(double x1,double y1,double x2, double y2);
     double convertToMinusPiToPi(double radians);
-
+    void detected_part_locations(std::vector<double> vec);
    
 };

@@ -1,0 +1,3 @@
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:192:76:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+  192 |             RCLCPP_INFO_STREAM(this->get_logger(), 'Added part to the list'[01;35m[K)[m[K;
+      |                                                                            [01;35m[K^[m[K

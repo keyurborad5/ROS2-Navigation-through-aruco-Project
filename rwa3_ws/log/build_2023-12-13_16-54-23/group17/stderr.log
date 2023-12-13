@@ -1,0 +1,7 @@
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:192:76:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+  192 |             RCLCPP_INFO_STREAM(this->get_logger(), 'Added part to the list'[01;35m[K)[m[K;
+      |                                                                            [01;35m[K^[m[K
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:[m[K In member function ‘[01m[Kvoid MyRobotNode::detected_part_locations(std::vector<double, std::allocator<double> >)[m[K’:
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:186:18:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<double, std::allocator<double> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  186 |     for(int i=0;[01;35m[Ki<parts_vector_.size()[m[K;++i){
+      |                 [01;35m[K~^~~~~~~~~~~~~~~~~~~~~[m[K

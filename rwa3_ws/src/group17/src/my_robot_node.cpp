@@ -165,7 +165,8 @@ void MyRobotNode::part_listen_transform(const std::string &source_frame, const s
         pose_out.orientation.z,
         pose_out.orientation.w);
     std::array<double, 3> euler = utils_ptr_->set_euler_from_quaternion(q);
-    //part_vector_={part_color_,pose_out.position.x,pose_out.position.y,pose_out.position.z,euler[0],euler[1],euler[2]};
+    std::vector<double> detection={part_color_,pose_out.position.x,pose_out.position.y,pose_out.position.z,euler[0],euler[1],euler[2]};
+    detected_part_locations(detection);
     // for(size_t i; i<parts_vector_.size();++i){
     //     if(parts_vector_[i][0])
 
@@ -180,7 +181,48 @@ void MyRobotNode::part_listen_transform(const std::string &source_frame, const s
                                                         << "qz: " << pose_out.orientation.z << "\t"
                                                         << "qw: " << pose_out.orientation.w << "\n");
 }
+ void MyRobotNode::detected_part_locations(std::vector<double> vec){
+    
+    int count=0;
+    if(!parts_vector_.empty()){
+        for(long unsigned int i=0;i<parts_vector_.size();++i){
+            if( parts_vector_[i][0] ==vec[0]){
+                count+=1;
+            }
+    }
+    }
+    if(count==0){
+        parts_vector_.push_back(vec);
+        RCLCPP_INFO_STREAM(this->get_logger(), "Added part to the list");
+        for (const auto& vect : parts_vector_) {
+            for ( const auto element : vect) {
+                RCLCPP_INFO_STREAM(this->get_logger(),  element << ' ');
+            }
+            
+        }
+    }
+    }
+    // if (std::any_of(parts_vector_.begin(), parts_vector_.end(),[&](const std::vector<int>& existingVector) {
+    //                            return vec[0] == existingVector[0];
+    //                        })) {parts_vector_=parts_vector_;
+            
+    //     }
+    //     else{
 
+
+    //         parts_vector_.push_back(vec);
+    //         RCLCPP_INFO_STREAM(this->get_logger(), 'Added part to the list');
+
+    //         // std::cout << "Vector of Vectors:" << std::endl;
+    //         for (const auto& vect : parts_vector_) {
+    //             for (int element : vect) {
+    //                 RCLCPP_INFO_STREAM(this->get_logger(),  element << ' ');
+    //             }
+                
+    //         }
+
+    // }
+ 
 
 void MyRobotNode::aruco_cam_sub_cb(ros2_aruco_interfaces::msg::ArucoMarkers::SharedPtr msg){
 
