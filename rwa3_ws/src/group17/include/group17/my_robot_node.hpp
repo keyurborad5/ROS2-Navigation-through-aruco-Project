@@ -46,12 +46,12 @@ public:
         aruco_tf_buffer_->setUsingDedicatedThread(true);
         part_tf_buffer_ = std::make_unique<tf2_ros::Buffer>(this->get_clock());
         part_tf_buffer_->setUsingDedicatedThread(true);
+
         // Create a utils object to use the utility functions
         utils_ptr_ = std::make_shared<Utils>();
 
         
         //************************Listener******************************
-        // RCLCPP_INFO(this->get_logger(), "Listener demo started");
 
         // load a buffer of transforms
         aruco_tf_listener_buffer_ =std::make_unique<tf2_ros::Buffer>(this->get_clock());
@@ -91,6 +91,9 @@ private:
     std::string aruco_marker_0_;
     std::string aruco_marker_1_;
     std::string aruco_marker_2_;
+    //###########################-----------BROADCASTER------------########################
+
+    //******************Attribubtes*******************
     /*!< Boolean parameter to whether or not start the broadcaster */
     bool param_broadcast_;
     /*!< Buffer that stores several seconds of transforms for easy lookup by the listener. */
@@ -101,19 +104,9 @@ private:
     std::shared_ptr<tf2_ros::Buffer> part_tf_buffer_;
     /*!< MyRobotNode object */
     std::shared_ptr<tf2_ros::TransformBroadcaster> part_tf_broadcaster_;
-    /*!< Utils object to access utility functions*/
-    std::shared_ptr<Utils> utils_ptr_;
-    double part_color_;
-    uint8_t part_type_;
-    int marker_id_;
-    double target_rad_ =current_yaw_;
-    double old_rad_ =current_yaw_;
-
-    std::vector<double> part_vector_;
-    std::vector<std::vector<double>> parts_vector_{0};
     
     
-
+    //**********************Methods***********************
     /**
      * @brief Timer to broadcast the transform
      *
@@ -127,27 +120,23 @@ private:
     void part_broadcaster(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr);
     
 
-    //******************Listener***********************
+    //###########################-----------LISTENER------------########################
 
+     //******************Attribubtes*******************
      /*!< Boolean variable to store the value of the parameter "listen" */
     bool param_listen_;
     /*!< Buffer that stores several seconds of transforms for easy lookup by the listener. */
     std::unique_ptr<tf2_ros::Buffer> aruco_tf_listener_buffer_;
     std::unique_ptr<tf2_ros::Buffer> base_link_tf_listener_buffer_;
+    std::unique_ptr<tf2_ros::Buffer> part_tf_listener_buffer_;
     /*!< Transform listener object */
     std::shared_ptr<tf2_ros::TransformListener> aruco_transform_listener_{nullptr};
     std::shared_ptr<tf2_ros::TransformListener> base_link_transform_listener_{nullptr};
-
-    double aruco_x_pos_;
-    double aruco_y_pos_;
-    double base_link_x_pos_;
-    double base_link_y_pos_;
-    double current_yaw_;
-    bool flag1_=true;
-    bool end_flag_=false;
-    bool end_flag2_=false;
+    std::shared_ptr<tf2_ros::TransformListener> part_transform_listener_{nullptr};
 
     
+    //**********************Methods***********************
+
     /**
      * @brief Listen to a aruco transform
      *
@@ -162,11 +151,7 @@ private:
      * @param target_frame Target frame (parent frame) of the transform
      */
     void base_link_listen_transform(const std::string &source_frame, const std::string &target_frame);
-
-    /*!< Buffer that stores several seconds of transforms for easy lookup by the listener. */
-    std::unique_ptr<tf2_ros::Buffer> part_tf_listener_buffer_;
-    /*!< Transform listener object */
-    std::shared_ptr<tf2_ros::TransformListener> part_transform_listener_{nullptr};
+    
     
     /**
      * @brief Listen to a part transform
@@ -177,26 +162,102 @@ private:
     void part_listen_transform(const std::string &source_frame, const std::string &target_frame);
 
 
-    //***********Subscriber**********************
+    //###########################-----------SUBSCRIBER------------########################
+
+     //******************Attribubtes*******************
+
     rclcpp::Subscription<ros2_aruco_interfaces::msg::ArucoMarkers>::SharedPtr aruco_cam_subscriber_;
-    void aruco_cam_sub_cb(const ros2_aruco_interfaces::msg::ArucoMarkers::SharedPtr msg);
-
     rclcpp::Subscription<mage_msgs::msg::AdvancedLogicalCameraImage>::SharedPtr part_cam_subscriber_;
-    void part_cam_sub_cb(const mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr msg);
-
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_subscriber_;
+
+
+    //**********************Methods***********************
+    /**
+     * @brief Timer callback for Aruco camera to continously read the feed
+     * 
+     * @param msg A type of a message sent by the TOPIC /aruco_markers
+     */
+    void aruco_cam_sub_cb(const ros2_aruco_interfaces::msg::ArucoMarkers::SharedPtr msg);
+    /**
+     * @brief Timer callback for Advanced logical camera detecting a part
+     * 
+     * @param msg A type of message sent by the TOPIC mage/Advanced_logical_camera/Images
+     */
+    void part_cam_sub_cb(const mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr msg);
+    /**
+     * @brief A Timer Callback for reading the Odometry data from Topic odom
+     * 
+     * @param msg A type of message sent by the Topic /odom
+     */
     void odom_sub_cb(nav_msgs::msg::Odometry::SharedPtr msg);
-    //*******************Publisher**********************
+
+
+    //###########################-----------PUBLISHER------------########################
+
+    //*******************Attributes**********************
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_val_publisher_;
     
     rclcpp::TimerBase::SharedPtr cmd_val_timer_;
+
+    //*******************Methods**********************
+    /**
+     * @brief A callback method to continously publish command value
+     * 
+     */
     void cmd_val_pub_cb();
     
-
-    //************************Calculating Distance****************************
+    
+    //###########################-----------ADDITIONAL METHODS------------########################
+    /**
+     * @brief To calculate the absolute distance between two 2-d(x,y) coordinates
+     * 
+     * @param x1 x value of first coordinate
+     * @param y1 y value of first coordinate
+     * @param x2 x value of second coordinate
+     * @param y2 y value of second coordinate
+     * @return double return the distance value in double
+     */
     double distance(double x1,double y1,double x2, double y2);
+
+    /**
+     * @brief To convert any given randian value in -pi to pi value
+     * 
+     * @param radians input radians value
+     * @return double  return radian value between -pi to pi
+     */
     double convertToMinusPiToPi(double radians);
+    /**
+     * @brief A method which logs the data of any part(without repeatation) that is detected by advanced logical camera
+     * 
+     * @param vec input vector of data that needed to be logged
+     */
     void detected_part_locations(std::vector<double> vec);
+
+    /**
+     * @brief Method that maps color of the detected part to a number associated with it
+     * 
+     * @param c inputs a number
+     * @return std::string outputs a color associated with input number
+     */
     std::string num2color(int c);
+
+    /*!< Utils object to access utility functions*/
+    std::shared_ptr<Utils> utils_ptr_;
+    double part_color_;
+    uint8_t part_type_;
+    int marker_id_;
+    double target_rad_ =current_yaw_;
+    double old_rad_ =current_yaw_;
+    double aruco_x_pos_;
+    double aruco_y_pos_;
+    double base_link_x_pos_;
+    double base_link_y_pos_;
+    double current_yaw_;
+    bool flag1_=true;
+    bool end_flag_=false;
+    bool end_flag2_=false;
+
+    std::vector<double> part_vector_;
+    std::vector<std::vector<double>> parts_vector_{0};
    
 };
