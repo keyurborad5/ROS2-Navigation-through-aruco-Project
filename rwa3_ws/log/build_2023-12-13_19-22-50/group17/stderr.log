@@ -1,0 +1,28 @@
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:286:13:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kstd::string MyRobotNode::num2color(int)[m[K’
+  286 | std::string [01;31m[KMyRobotNode[m[K::num2color(int c){
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:286:13:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kstd::string MyRobotNode::num2color(int)[m[K’
+In file included from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1[m[K:
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:19:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass MyRobotNode[m[K’ defined here
+   19 | class [01;36m[KMyRobotNode[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/opt/ros/galactic/include/tf2_ros/static_transform_broadcaster.h:38[m[K,
+                 from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/include/group17/my_robot_node.hpp:4[m[K,
+                 from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:1[m[K:
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:[m[K In member function ‘[01m[Kvoid MyRobotNode::cmd_val_pub_cb()[m[K’:
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/my_robot_node.cpp:360:72:[m[K [01;31m[Kerror: [m[K‘[01m[Knum2color[m[K’ is not a member of ‘[01m[KMyRobotNode[m[K’
+  360 |                     RCLCPP_INFO_STREAM(this->get_logger(),MyRobotNode::[01;31m[Knum2color[m[K(parts_vector_[i][0])<<" battery detected at xyz=["<<parts_vector_[i][1]<<","
+      |                                                                        [01;31m[K^~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/my_robot_node.dir/build.make:63: CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/my_robot_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

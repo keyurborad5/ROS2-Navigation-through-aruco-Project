@@ -197,5 +197,6 @@ private:
     double distance(double x1,double y1,double x2, double y2);
     double convertToMinusPiToPi(double radians);
     void detected_part_locations(std::vector<double> vec);
+    std::string num2color(int c);
    
 };

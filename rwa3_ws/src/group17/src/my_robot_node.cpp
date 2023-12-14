@@ -283,6 +283,23 @@ double MyRobotNode::convertToMinusPiToPi(double radians) {
     return radians;
 }
 
+std::string MyRobotNode::num2color(int c){
+    switch(c){
+        case 1:
+        return "green";
+        break;
+        case 2:
+        return "blue";
+        break;
+        case 3:
+        return "orange";
+        break;
+        default:
+        return "invalid";
+        break;
+        
+    }
+}
 
 
 void MyRobotNode::cmd_val_pub_cb(){
@@ -340,7 +357,8 @@ void MyRobotNode::cmd_val_pub_cb(){
                 flag1_=false;
                 RCLCPP_INFO_STREAM(this->get_logger(),"You are at your destination " );
                 for (long unsigned int i=0;i<parts_vector_.size();++i){
-                    RCLCPP_INFO_STREAM(this->get_logger(),parts_vector_[i][0]<<" battery detected at xyz=["<<parts_vector_[i][1]<<","
+                    //std::string str=num2color(parts_vector_[i][0]);
+                    RCLCPP_INFO_STREAM(this->get_logger(),num2color(parts_vector_[i][0]).c_str()<<" battery detected at xyz=["<<parts_vector_[i][1]<<","
                                                                                                             <<parts_vector_[i][2]<<","
                                                                                                             <<parts_vector_[i][3]<<"] rpy=["
                                                                                                             <<parts_vector_[i][4]<<","
