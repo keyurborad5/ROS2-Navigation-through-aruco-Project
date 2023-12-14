@@ -295,13 +295,14 @@ void MyRobotNode::cmd_val_pub_cb(){
     switch (marker_id_)
     {
     case 0:
-        rotate_rad = -85*M_PI/180;
+        rotate_rad = -80*M_PI/180;
         break;
     case 1:
-        rotate_rad = 85*M_PI/180;
+        rotate_rad = 80*M_PI/180;
         break;
     case 2:
         rotate_rad = 0*M_PI/180;
+        end_flag_=true;
         break;
     
     default:
@@ -313,10 +314,13 @@ void MyRobotNode::cmd_val_pub_cb(){
     if(dist>=1.0 && flag1_==true){
         
         linear.angular.z=0.0*(old_rad_-current_yaw_);
-        linear.linear.x = 0.3;
+        linear.linear.x = 0.2;
         RCLCPP_INFO_STREAM(this->get_logger(),"Going_forward by 0.1m/s, dist: "<< dist);
         target_rad_=current_yaw_+rotate_rad;
         target_rad_=convertToMinusPiToPi(target_rad_);
+        if (end_flag_==true){
+            end_flag2_=true;
+        }
 
 
 
@@ -329,7 +333,23 @@ void MyRobotNode::cmd_val_pub_cb(){
         linear.angular.z=kp*(target_rad_-current_yaw_);
         cmd_val_publisher_->publish(linear);
         RCLCPP_INFO_STREAM(this->get_logger(),"NOWW TURNING, : "<< current_yaw_);
-        if(abs(target_rad_-current_yaw_)<0.01){flag1_=true; old_rad_=target_rad_;}
+        if(abs(target_rad_-current_yaw_)<0.01){
+            flag1_=true; old_rad_=target_rad_;
+            if (end_flag2_==true){
+                linear.linear.x = 0.0;
+                flag1_=false;
+                RCLCPP_INFO_STREAM(this->get_logger(),"You are at your destination " );
+                for (long unsigned int i=0;i<parts_vector_.size();++i){
+                    RCLCPP_INFO_STREAM(this->get_logger(),parts_vector_[i][0]<<" battery detected at xyz=["<<parts_vector_[i][1]<<","
+                                                                                                            <<parts_vector_[i][2]<<","
+                                                                                                            <<parts_vector_[i][3]<<"] rpy=["
+                                                                                                            <<parts_vector_[i][4]<<","
+                                                                                                            <<parts_vector_[i][5]<<","
+                                                                                                            <<parts_vector_[i][6]<<"]");
+                }
+            }
+        }
+        
         
         
     }

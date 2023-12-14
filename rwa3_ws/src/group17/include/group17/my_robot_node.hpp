@@ -69,7 +69,7 @@ public:
 
 
         //********************Subscriber**************************
-        // aruco_cam_subscriber_=this->create_subscription<ros2_aruco_interfaces::msg::ArucoMarkers>("aruco_markers",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::aruco_cam_sub_cb,this,std::placeholders::_1));
+        aruco_cam_subscriber_=this->create_subscription<ros2_aruco_interfaces::msg::ArucoMarkers>("aruco_markers",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::aruco_cam_sub_cb,this,std::placeholders::_1));
         rclcpp::QoS qos(10); qos.reliability(RMW_QOS_POLICY_RELIABILITY_BEST_EFFORT);
         part_cam_subscriber_=this->create_subscription<mage_msgs::msg::AdvancedLogicalCameraImage>("mage/advanced_logical_camera/image",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::part_cam_sub_cb,this,std::placeholders::_1));
         
@@ -78,9 +78,9 @@ public:
         //********************Publisher*****************************
         cmd_val_publisher_=this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel",10);
 
-        // std::this_thread::sleep_for(std::chrono::seconds(5));
+        std::this_thread::sleep_for(std::chrono::seconds(5));
 
-        // cmd_val_timer_ = this->create_wall_timer(std::chrono::milliseconds(100),std::bind(&MyRobotNode::cmd_val_pub_cb,this));
+        cmd_val_timer_ = this->create_wall_timer(std::chrono::milliseconds(100),std::bind(&MyRobotNode::cmd_val_pub_cb,this));
         
 
     }
@@ -144,6 +144,9 @@ private:
     double base_link_y_pos_;
     double current_yaw_;
     bool flag1_=true;
+    bool end_flag_=false;
+    bool end_flag2_=false;
+
     
     /**
      * @brief Listen to a aruco transform
