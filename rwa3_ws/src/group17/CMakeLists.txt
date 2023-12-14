@@ -40,16 +40,10 @@ install(TARGETS my_robot_node
   RUNTIME DESTINATION lib/${PROJECT_NAME}
 )
 
-add_executable(listener src/listener.cpp src/utils.cpp)
-ament_target_dependencies(listener ament_cmake rclcpp mage_msgs geometry_msgs std_msgs tf2_ros tf2 tf2_geometry_msgs)
 
-install(TARGETS listener
-  RUNTIME DESTINATION lib/${PROJECT_NAME}
-)
 
 install(TARGETS
 my_robot_node
-listener
 DESTINATION lib/${PROJECT_NAME}
 )
 

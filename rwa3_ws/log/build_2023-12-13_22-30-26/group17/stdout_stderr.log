@@ -1,0 +1,9 @@
+[35m[1mScanning dependencies of target my_robot_node[0m
+[35m[1mScanning dependencies of target listener[0m
+make[2]: *** No rule to make target '/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/src/group17/src/listener.cpp', needed by 'CMakeFiles/listener.dir/src/listener.cpp.o'.  Stop.
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/listener.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 16%] [32mBuilding CXX object CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o[0m
+[ 33%] [32m[1mLinking CXX executable my_robot_node[0m
+[ 50%] Built target my_robot_node
+make: *** [Makefile:141: all] Error 2

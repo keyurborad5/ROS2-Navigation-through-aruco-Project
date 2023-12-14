@@ -69,7 +69,7 @@ void MyRobotNode::part_broadcaster(mage_msgs::msg::AdvancedLogicalCameraImage::S
 
     part_dynamic_transform_stamped.transform.translation.x = msg->part_poses[0].pose.position.x;
     part_dynamic_transform_stamped.transform.translation.y = msg->part_poses[0].pose.position.y;
-    part_dynamic_transform_stamped.transform.translation.z = -msg->part_poses[0].pose.position.z;
+    part_dynamic_transform_stamped.transform.translation.z = -msg->part_poses[0].pose.position.z;//had to make it neg because it was detecting object below the floor
 
     part_dynamic_transform_stamped.transform.rotation.x = msg->part_poses[0].pose.orientation.x;
     part_dynamic_transform_stamped.transform.rotation.y = msg->part_poses[0].pose.orientation.y;
