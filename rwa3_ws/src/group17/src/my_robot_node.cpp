@@ -303,10 +303,10 @@ void MyRobotNode::cmd_val_pub_cb(){
     switch (marker_id_)
     {
     case 0:
-        rotate_rad = -80*M_PI/180;
+        rotate_rad = -85*M_PI/180;//kept few degrees less just to deal with overshoot
         break;
     case 1:
-        rotate_rad = 80*M_PI/180;
+        rotate_rad = 85*M_PI/180;
         break;
     case 2:
         rotate_rad = 0*M_PI/180;
@@ -322,11 +322,11 @@ void MyRobotNode::cmd_val_pub_cb(){
     if(dist>=1.0 && flag1_==true){//linear movement
         
         move.angular.z=0.0;
-        move.linear.x = 0.2;
+        move.linear.x = 0.1;
         RCLCPP_INFO_STREAM(this->get_logger(),"Going_forward by 0.1m/s, dist: "<< dist);
-        target_rad_=current_yaw_+rotate_rad;
-        target_rad_=convertToMinusPiToPi(target_rad_);
-        if (end_flag_==true){
+        target_rad_=current_yaw_+rotate_rad;//setting target for coming turn
+        target_rad_=convertToMinusPiToPi(target_rad_); //converting absolute radians to in between -pi to pi
+        if (end_flag_==true){//flag to enter in end of program
             end_flag2_=true;
         }
 
@@ -339,10 +339,9 @@ void MyRobotNode::cmd_val_pub_cb(){
         //  RCLCPP_INFO_STREAM(this->get_logger(),"Stopped ,, dist: "<< dist);
         flag1_=false;
         move.angular.z=kp*(target_rad_-current_yaw_);//send command for rotation
-        //cmd_val_publisher_->publish(move);
         RCLCPP_INFO_STREAM(this->get_logger(),"NOWW TURNING, : "<< current_yaw_);
         if(abs(target_rad_-current_yaw_)<0.01){//condition of stop turning
-            flag1_=true; 
+            flag1_=true; //flag that will help to reenter in the linear movement
             if (end_flag2_==true){//flag for indicating end of program
                 move.linear.x = 0.0;
                 flag1_=false;
